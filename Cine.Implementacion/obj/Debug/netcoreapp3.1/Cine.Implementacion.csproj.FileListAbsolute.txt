@@ -1,0 +1,8 @@
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Implementacion\bin\Debug\netcoreapp3.1\Cine.Implementacion.deps.json
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Implementacion\bin\Debug\netcoreapp3.1\Cine.Implementacion.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Implementacion\bin\Debug\netcoreapp3.1\Cine.Implementacion.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Implementacion\obj\Debug\netcoreapp3.1\Cine.Implementacion.csprojAssemblyReference.cache
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Implementacion\obj\Debug\netcoreapp3.1\Cine.Implementacion.AssemblyInfoInputs.cache
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Implementacion\obj\Debug\netcoreapp3.1\Cine.Implementacion.AssemblyInfo.cs
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Implementacion\obj\Debug\netcoreapp3.1\Cine.Implementacion.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Implementacion\obj\Debug\netcoreapp3.1\Cine.Implementacion.pdb

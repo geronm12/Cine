@@ -1,0 +1,114 @@
+﻿
+@model MetaDatos.MemoryDataBase.Peliculas;
+
+@{
+    int _entradas = 0;
+    ViewData["Title"] = "Entradas";
+    decimal subTotal = 0;
+    int cantidadEntradas = Model.Entradas.Cantidad;
+    
+}
+
+
+
+    <style>
+        .ImagenTamaño {
+            width: 40%;
+            height: 40%;
+            display: block;
+            margin: auto;
+        }
+
+        .VideoTamaño {
+            width: 100%;
+            height: 400px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+
+
+<h1>Entradas</h1>
+<table>
+    <tbody>
+        <th></th>
+        <td>
+            <div class="card border-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header"><img class="ImagenTamaño" src="@Model.URL" /></div>
+                <div class="card-body text-primary">
+                    <h5 class="card-title">@Model.Nombre</h5>
+                    <p class="card-text">
+                        <div><h1>Entradas:</h1></div>
+                        <div><h3>Cantidad Restante:</h3>@cantidadEntradas</div>
+                        <div><h3>Precio:</h3>$@Model.Entradas.Precio</div>
+                        <form>
+                            <div class="form-row align-items-center">
+                                <div class="col-auto my-1">
+                                  @{
+                                      var lista = new List<SelectListItem>();
+
+                                      for (int i = 1; i <= cantidadEntradas; i++)
+                                      {
+
+                                          var item = new SelectListItem
+                                          {
+                                              Text = i.ToString(),
+                                              Value = i.ToString()
+
+                                          };
+
+                                          lista.Add(item);
+
+                                      }
+                                  }
+                                  <label>Escoja la cantidad de Entradas:</label>   
+                                  @Html.DropDownListFor(x => _entradas, lista, "Entradas", new { @class = "form-control" })
+                                    
+                                </div>
+                                <div class="col-auto my-1">
+                                @{
+                                    decimal devolverCampoCalculado(int cantidad, decimal precio)
+                                    {
+                                        return cantidad * precio;
+                                    }
+
+
+                                 }
+                                    <button type="button" class="btn btn-primary"  onclick="@{subTotal = devolverCampoCalculado(_entradas, Model.Entradas.Precio);}">Agregar al Carrito</button>
+                                </div>
+                            </div>
+                        </form>
+                    </p>
+                </div>
+            </div>
+        </td>
+    <th></th>
+    <th></th>
+    <td>
+        <table class="table">
+            
+            <tbody>
+                <tr>
+                    <th scope="row">Cantidad de Entradas</th>
+                    <td scope="row">Sub Total</td>
+                 
+                    
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>@subTotal</td>
+                    <td>@_entradas</td>
+                   
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td>Total:</td>
+                    <td>@subTotal</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+    </td>
+    </tbody>
+</table>

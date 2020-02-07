@@ -1,0 +1,42 @@
+﻿
+@model MetaDatos.MemoryDataBase.Usuarios;
+
+@{
+    Layout = "_LayoutEnBlanco";
+}
+<link rel="stylesheet" type="text/css" href="~/css/animate.css" />
+<script type="text/javascript">
+    $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+})
+</script>
+ 
+
+@using (Html.BeginForm("Login", "Usuario"))
+{
+
+        <div class="myModal fade animated rollIn" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                    </div>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger"})
+                <div class="modal-body">
+                    
+                    @Html.TextBoxFor(x => x.NombreUsuario, new { @class = "form-control", @placeholder = "Usuario", @label = "Usuario", @describedby = "basic-addon1" })
+                    @Html.ValidationMessageFor(x => x.NombreUsuario, "", new { @class = "text-danger" })
+                    <br />
+                    <br /> 
+                    @Html.PasswordFor(x => x.Password, new { @class = "form-control", @placeholder = "Password", @label = "Password", @describedby = "basic-addon1" })
+                    @Html.ValidationMessageFor(x => x.Password, "", new { @class = "text-danger" })
+                </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary" onclick="alertando()">Ingresar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" name="btnCrear" onclick="location.href = '@Url.Action("Crear", "Usuario")'">Crear Cuenta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+}

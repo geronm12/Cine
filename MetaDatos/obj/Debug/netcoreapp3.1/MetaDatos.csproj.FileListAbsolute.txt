@@ -1,0 +1,13 @@
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\bin\Debug\netcoreapp3.1\MetaDatos.deps.json
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\bin\Debug\netcoreapp3.1\MetaDatos.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\bin\Debug\netcoreapp3.1\MetaDatos.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\obj\Debug\netcoreapp3.1\MetaDatos.csprojAssemblyReference.cache
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\obj\Debug\netcoreapp3.1\MetaDatos.AssemblyInfoInputs.cache
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\obj\Debug\netcoreapp3.1\MetaDatos.AssemblyInfo.cs
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\obj\Debug\netcoreapp3.1\MetaDatos.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\obj\Debug\netcoreapp3.1\MetaDatos.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\bin\Debug\netcoreapp3.1\en-US\MetaDatos.resources.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\obj\Debug\netcoreapp3.1\MetaDatos.csproj.GenerateResource.cache
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\obj\Debug\netcoreapp3.1\en-US\MetaDatos.resources.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\obj\Debug\netcoreapp3.1\MetaDatos.MemoryDataBase.Recursos.Resource.resources
+C:\Users\gerol\source\repos\PracticaAsp.Net\MetaDatos\obj\Debug\netcoreapp3.1\MetaDatos.MemoryDataBase.Recursos.Resource.en-US.resources
