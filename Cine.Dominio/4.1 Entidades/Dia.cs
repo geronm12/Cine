@@ -9,7 +9,12 @@ namespace Cine.Dominio._4._1_Entidades
     {
         public TipoDia TipoDia {get; set;}
 
-        public List<DateTime> HorasDeProyeccion { get; set; }
+
+        //Propiedades de Navegacion
+
+        public virtual ICollection<Cronograma> Cronogramas { get; set; }
+
+
 
     }
 }

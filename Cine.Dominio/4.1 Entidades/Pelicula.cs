@@ -21,7 +21,11 @@ namespace Cine.Dominio._4._1_Entidades.Pelicula
 
         public string TrailerURL { get; set; }
 
-        
+        public string Descripción { get; set; }
+
+        //Propiedades de Navegacion
+
+        public virtual ICollection<Funcion> Funciones { get; set; }
 
     }
 }

@@ -10,9 +10,9 @@ namespace Cine.Dominio._4._1_Entidades.Entrada
 
         public long Numero { get; set; }
 
-        public long CantidadDisponible { get; set; }
+        //Propiedades de Navegacion
 
-        public decimal Precio { get; set; }
+        public virtual Funcion Funcion { get; set; }
 
 
     }

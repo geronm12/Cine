@@ -12,9 +12,8 @@ namespace Cine.Dominio._4._1_Entidades.Cine
 
         public string Teléfono { get; set; }
 
-        
-        
+        //Propiedades de Navegacion
 
-
+        public virtual ICollection<Sala.Sala> Salas { get; set; }
     }
 }

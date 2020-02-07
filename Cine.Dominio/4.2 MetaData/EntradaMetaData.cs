@@ -10,12 +10,9 @@ namespace Cine.Dominio._4._2_MetaData.Entrada
         {
             builder.Property(x => x.Numero).IsRequired();
 
-            builder.Property(x => x.Precio).HasColumnName("numeric(18,2)").IsRequired();
-
             builder.Property(x => x.Descripcion).HasMaxLength(100).IsRequired();
 
-            builder.Property(x => x.CantidadDisponible).IsRequired();
-
+             
         }
     }
 }
