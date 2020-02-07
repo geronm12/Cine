@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Cine.Dominio\Cine.Dominio.csproj" />
     <ProjectReference Include="..\ConexionSql\Cine.ConexionSql.csproj" />
   </ItemGroup>
 

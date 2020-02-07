@@ -13,6 +13,9 @@ namespace Cine.Dominio._4._2_MetaData.Sala
             builder.Property(x => x.NumeroSalon).IsRequired();
 
             builder.Property(x => x.CapacidadMáx).IsRequired();
+
+            builder.Property(x => x.CineId).IsRequired();
+
         }
     }
 }

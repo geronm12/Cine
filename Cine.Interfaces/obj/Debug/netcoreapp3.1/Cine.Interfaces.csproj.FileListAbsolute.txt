@@ -1,7 +1,6 @@
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Interfaces.deps.json
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Interfaces.dll
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Interfaces.pdb
-C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.csprojAssemblyReference.cache
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.AssemblyInfoInputs.cache
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.AssemblyInfo.cs
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.dll

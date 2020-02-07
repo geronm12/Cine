@@ -10,7 +10,7 @@ namespace Cine.Dominio._4._1_Entidades
 
         public long HorarioId { get; set; }
 
-        public bool PoseeTrasnoche { get; set; }
+        public bool EsTrasnoche { get; set; }
 
 
         public virtual Dia Dia { get; set; }

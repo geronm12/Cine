@@ -10,7 +10,7 @@ namespace Cine.Dominio._4._1_Entidades
         [Key]
         public long Id { get; set; }
 
-
+        public bool EstaBorrado { get; set; }
 
     }
 }

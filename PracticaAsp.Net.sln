@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cine", "Cine\Cine.csproj", "{21438068-72A7-4035-AEA4-60CFC7795880}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentacion", "1 - Presentacion", "{36E57ECC-A1BC-49E9-85BC-F3B24C0C1D43}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2- Aplicacion", "2- Aplicacion", "{160E8B13-597F-49B4-A978-B40ECE324522}"
@@ -51,10 +49,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{21438068-72A7-4035-AEA4-60CFC7795880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21438068-72A7-4035-AEA4-60CFC7795880}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21438068-72A7-4035-AEA4-60CFC7795880}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21438068-72A7-4035-AEA4-60CFC7795880}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F2E48BF3-2360-4F85-A465-CA3559C87CB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F2E48BF3-2360-4F85-A465-CA3559C87CB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2E48BF3-2360-4F85-A465-CA3559C87CB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -84,7 +78,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{21438068-72A7-4035-AEA4-60CFC7795880} = {B10C53AA-E135-4F7F-99AB-8F111C0A95C8}
 		{B10C53AA-E135-4F7F-99AB-8F111C0A95C8} = {36E57ECC-A1BC-49E9-85BC-F3B24C0C1D43}
 		{53C2086D-7F84-498E-B2DE-21C99157A0F1} = {36E57ECC-A1BC-49E9-85BC-F3B24C0C1D43}
 		{F2E48BF3-2360-4F85-A465-CA3559C87CB1} = {D892D28D-F315-416E-BFBD-FCA1A8AA7659}

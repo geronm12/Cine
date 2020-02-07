@@ -1,4 +1,5 @@
 ﻿using Cine.Dominio._4._1_Entidades;
+using Cine.Dominio._4._6_Enumeradores;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -11,7 +12,10 @@ namespace Cine.Dominio._4._2_MetaData
     {
         public void Configure(EntityTypeBuilder<Dia> builder)
         {
-            throw new NotImplementedException();
+            builder.Property(x => x.TipoDia).HasConversion(x => x.ToString(), e => (TipoDia)Enum.Parse(typeof(TipoDia), e)).IsRequired();
+
+            
+
         }
     }
 }

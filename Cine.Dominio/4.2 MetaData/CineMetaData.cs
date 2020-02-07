@@ -18,6 +18,8 @@ namespace Cine.Dominio._4._2_MetaData.Cine
             builder.Property(x => x.Dirección).IsRequired().HasMaxLength(150);
 
             
+
+            
         }
     }
 }

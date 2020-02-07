@@ -12,6 +12,7 @@ namespace Cine.Dominio._4._2_MetaData.Entrada
 
             builder.Property(x => x.Descripcion).HasMaxLength(100).IsRequired();
 
+            
              
         }
     }

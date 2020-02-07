@@ -11,3 +11,7 @@ C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Infraestructura\bin\Debug\netco
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Infraestructura\obj\Debug\netcoreapp3.1\Cine.Infraestructura.csproj.CopyComplete
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Infraestructura\obj\Debug\netcoreapp3.1\Cine.Infraestructura.dll
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Infraestructura\obj\Debug\netcoreapp3.1\Cine.Infraestructura.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Infraestructura\bin\Debug\netcoreapp3.1\Cine.Constantes.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Infraestructura\bin\Debug\netcoreapp3.1\Cine.Dominio.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Infraestructura\bin\Debug\netcoreapp3.1\Cine.Dominio.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Infraestructura\bin\Debug\netcoreapp3.1\Cine.Constantes.pdb
