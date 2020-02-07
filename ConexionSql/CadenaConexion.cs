@@ -18,8 +18,16 @@ namespace Cine.ConexionSql
         public const string Usuario = "root";
         public const string Password = "agente21";
 
-        
-        public static string ObtenerCadenaConexionMySqlFirestore => $"Server={Servidor};Database={BaseDeDatos};Uid={Usuario};Pwd={Password};";
+        static readonly MySqlConnectionStringBuilder conn = new MySqlConnectionStringBuilder
+        {
+            Server = "127.0.0.1",
+            Database = "Cines",
+            UserID = "root",
+            Password = "agente21",
+            Port = 3306
+
+        };
+        public static string ObtenerCadenaConexionMySqlFirestore => conn.ConnectionString;
 
 
     }

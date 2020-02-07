@@ -1,7 +1,6 @@
 ﻿using Cine.ConexionSql;
 using Microsoft.EntityFrameworkCore;
-using MySql.Data.EntityFrameworkCore.Extensions;
-using MySql.Data.MySqlClient;
+ using MySql.Data.MySqlClient;
 using System.Linq;
 using static Cine.ConexionSql.CadenaConexion;
 using Cine.Dominio._4._1_Entidades;
@@ -26,9 +25,9 @@ namespace Cine.Infraestructura
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-
+           
              
-            optionsBuilder.UseMySQL(ObtenerCadenaConexionMySqlFirestore);
+            optionsBuilder.UseMySql(ObtenerCadenaConexionMySqlFirestore);
  
              base.OnConfiguring(optionsBuilder);
 

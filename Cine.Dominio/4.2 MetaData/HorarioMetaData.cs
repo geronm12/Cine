@@ -10,9 +10,9 @@ namespace Cine.Dominio._4._2_MetaData.Horarios
     {
         public void Configure(EntityTypeBuilder<_1_Entidades.Horarios.Horarios> builder)
         {
-            builder.Property(x => x.HoraFin).HasColumnType("Time").IsRequired();
+            builder.Property(x => x.HoraFin).HasColumnType("DateTime").IsRequired();
 
-            builder.Property(x => x.HoraInicio).HasColumnType("Time").IsRequired();
+            builder.Property(x => x.HoraInicio).HasColumnType("DateTime").IsRequired();
 
             
 
