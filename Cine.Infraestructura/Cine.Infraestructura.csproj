@@ -5,10 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repositorio\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
       <PrivateAssets>all</PrivateAssets>
@@ -19,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cine.Dominio\Cine.Dominio.csproj" />
+    <ProjectReference Include="..\Cine.Interfaces\Cine.Interfaces.csproj" />
     <ProjectReference Include="..\ConexionSql\Cine.ConexionSql.csproj" />
   </ItemGroup>
 

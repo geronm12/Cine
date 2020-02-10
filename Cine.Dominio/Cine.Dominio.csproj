@@ -5,9 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="4.3 Repositorio\" />
-    <Folder Include="4.4 AutoMapper\" />
-    <Folder Include="4.5 Method\" />
+    <Folder Include="4.3 AutoMapper\" />
+    <Folder Include="4.4 Method\" />
   </ItemGroup>
 
   <ItemGroup>
