@@ -30,7 +30,7 @@ namespace Cine.Implementacion.Cronograma
         {
             var cronograma = await _cronogramaRepos.GetById(cronogramaId);
 
-            if(cronograma != null)
+            if (cronograma != null)
             {
                 await _cronogramaRepos.Delete(cronograma);
             }
@@ -38,14 +38,15 @@ namespace Cine.Implementacion.Cronograma
 
         public async Task Update(CronogramaDto dto)
         {
-            var cronograma = await _cronogramaRepos.GetById(dto.Id); 
-            
-            if(cronograma != null)
+            var cronograma = await _cronogramaRepos.GetById(dto.Id);
+
+            if (cronograma != null)
             {
                 cronograma = _mapper.Map<Dominio._4._1_Entidades.Cronograma>(dto);
 
                 await _cronogramaRepos.Update(cronograma);
             }
-        
+
         }
+    }
 }

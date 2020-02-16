@@ -5,11 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Cine\" />
-    <Folder Include="Cronograma\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Cine.Infraestructura\Cine.Infraestructura.csproj" />
     <ProjectReference Include="..\Cine.Interfaces\Cine.Interfaces.csproj" />
     <ProjectReference Include="..\HelpersServicios\HelpersServicios.csproj" />

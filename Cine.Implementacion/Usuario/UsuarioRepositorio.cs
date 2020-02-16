@@ -19,19 +19,26 @@ namespace Cine.Implementacion.Usuario
         private readonly IRepository<Dominio._4._1_Entidades.Usuario.Usuario> _usuarioRepos;
  
         private  readonly IMapper _mapper;
-      
-        public UsuarioRepositorio(IRepository<Dominio._4._1_Entidades.Usuario.Usuario> usuarioRepos)
+
+        private readonly IEncryptar _encryptar;
+        public UsuarioRepositorio(IRepository<Dominio._4._1_Entidades.Usuario.Usuario> usuarioRepos, IEncryptar encriptar)
         {
             _usuarioRepos = usuarioRepos;
 
-            _mapper = CrearMapa(); 
+            _mapper = CrearMapa();
+
+            _encryptar = encriptar;
 
         }
 
         public async Task Create(UsuarioDto dto)
         {
 
-          await _usuarioRepos.Create(_mapper.Map<Dominio._4._1_Entidades.Usuario.Usuario>(dto));
+            var passwordEncriptado = _encryptar.Encriptar(dto.Password, _encryptar.GetKey());
+
+            dto.Password = passwordEncriptado;
+            
+            await _usuarioRepos.Create(_mapper.Map<Dominio._4._1_Entidades.Usuario.Usuario>(dto));
             
         }
 
@@ -51,7 +58,9 @@ namespace Cine.Implementacion.Usuario
         {
             bool esValido = await Task.Run(() =>
             {
-                return _usuarioRepos.GetByFilter(predicate: x => x.Nombre == nombre && x.Password == password, null, null, false) != null ? true : false;
+                return _usuarioRepos.GetByFilter(predicate: x => x.Nombre == nombre 
+                && _encryptar.Desencriptar(x.Password, _encryptar.GetKey()) 
+                == password, null, null, false) != null ? true : false;
             });
 
             return esValido;
@@ -65,6 +74,10 @@ namespace Cine.Implementacion.Usuario
 
             if(usuario != null)
             {
+                var password = _encryptar.Encriptar(dto.Password, _encryptar.GetKey());
+
+                dto.Password = password;
+
                 usuario = _mapper.Map<Dominio._4._1_Entidades.Usuario.Usuario>(dto);
 
                 await _usuarioRepos.Update(usuario);
