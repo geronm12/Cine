@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Cine.Interfaces.Entrada
 {
-    public class EntradaDto
+    public class EntradaDto: EntidadBaseDto.EntidadBaseDto
     {
         public string Descripcion { get; set; }
 

@@ -11,7 +11,7 @@ namespace Cine.Interfaces.Dia
 
         Task Update(DiaDto dto);
 
-        Task Delete(DiaDto dto);
+        Task Delete(long diaId);
 
 
 

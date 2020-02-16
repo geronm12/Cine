@@ -11,7 +11,7 @@ namespace Cine.Interfaces.Horario
 
         Task Update(HorarioDto dto);
 
-        Task Delete(HorarioDto dto);
+        Task Delete(long horarioId);
 
     }
 }

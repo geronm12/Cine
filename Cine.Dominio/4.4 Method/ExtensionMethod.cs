@@ -25,9 +25,8 @@ namespace Cine.Dominio._4._4_Method
 
             protected override Expression VisitParameter(ParameterExpression p)
             {
-                ParameterExpression replacement;
-
-                if (_map.TryGetValue(p, out replacement))
+                
+                if (_map.TryGetValue(p, out ParameterExpression replacement))
                 {
                     p = replacement;
                 }
@@ -57,6 +56,6 @@ namespace Cine.Dominio._4._4_Method
             {
                 return first.Compose(second, Expression.Or);
             }
-        
+      
     }
 }

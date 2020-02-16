@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Cine.Interfaces.Horario
 {
-    public class HorarioDto
+    public class HorarioDto: EntidadBaseDto.EntidadBaseDto
     {
         public DateTime HoraInicio { get; set; }
 

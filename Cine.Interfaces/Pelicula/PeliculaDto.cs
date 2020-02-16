@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Cine.Interfaces.Pelicula
 {
-    public class PeliculaDto
+    public class PeliculaDto:EntidadBaseDto.EntidadBaseDto
     {
         public string Nombre { get; set; }
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Cine.Interfaces.Funcion
 {
-    public class FuncionDto
+    public class FuncionDto: EntidadBaseDto.EntidadBaseDto
     {
         public long PeliculaId { get; set; }
 

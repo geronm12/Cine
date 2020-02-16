@@ -11,7 +11,7 @@ namespace Cine.Interfaces.Funcion
 
         Task Update(FuncionDto dto);
 
-        Task Delete(FuncionDto dto);
+        Task Delete(long funcionId);
 
     }
 }

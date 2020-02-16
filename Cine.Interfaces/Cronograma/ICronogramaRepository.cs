@@ -12,7 +12,7 @@ namespace Cine.Interfaces.Cronograma
 
         Task Update(CronogramaDto dto);
 
-        Task Delete(CronogramaDto dto);
+        Task Delete(long cronogramaId);
 
 
     }

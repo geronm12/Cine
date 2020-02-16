@@ -11,7 +11,7 @@ namespace Cine.Interfaces.Entrada
 
         Task Update(EntradaDto dto);
 
-        Task Delete(EntradaDto dto);
+        Task Delete(long entradaId);
 
 
     }

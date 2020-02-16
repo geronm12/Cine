@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Cine.Interfaces.Cronograma
 {
-    public class CronogramaDto
+    public class CronogramaDto:EntidadBaseDto.EntidadBaseDto
     {
         public long DiaId { get; set; }
 
