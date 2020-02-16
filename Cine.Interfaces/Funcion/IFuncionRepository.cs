@@ -13,5 +13,10 @@ namespace Cine.Interfaces.Funcion
 
         Task Delete(long funcionId);
 
+        Task<FuncionDto> GetById(long funcionId);
+
+        Task<IEnumerable<FuncionDto>>GetAllBySalaId(long salaId);
+
+       
     }
 }

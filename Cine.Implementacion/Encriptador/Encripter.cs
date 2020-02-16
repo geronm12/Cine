@@ -17,10 +17,12 @@ namespace Cine.Infraestructura.Encriptador
 
             keyArray = Encoding.UTF8.GetBytes(llave);
 
-            var tdes = new TripleDESCryptoServiceProvider();
-            tdes.Key = keyArray;
-            tdes.Mode = CipherMode.ECB;
-            tdes.Padding = PaddingMode.PKCS7;
+            var tdes = new TripleDESCryptoServiceProvider
+            {
+                Key = keyArray,
+                Mode = CipherMode.ECB,
+                Padding = PaddingMode.PKCS7
+            };
 
             ICryptoTransform ctransform = tdes.CreateEncryptor();
 
@@ -38,10 +40,12 @@ namespace Cine.Infraestructura.Encriptador
 
             keyArray = Encoding.UTF8.GetBytes(llave);
 
-            var tdes = new TripleDESCryptoServiceProvider();
-            tdes.Key = keyArray;
-            tdes.Mode = CipherMode.ECB;
-            tdes.Padding = PaddingMode.PKCS7;
+            var tdes = new TripleDESCryptoServiceProvider
+            {
+                Key = keyArray,
+                Mode = CipherMode.ECB,
+                Padding = PaddingMode.PKCS7
+            };
 
             ICryptoTransform ctransform = tdes.CreateDecryptor();
 

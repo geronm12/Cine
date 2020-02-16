@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using Cine.Interfaces.Cine;
 using Cine.Interfaces.Repositorio;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static Mapper.AutoMapper;
@@ -37,6 +39,35 @@ namespace Cine.Implementacion.Cine
                 await _cineRepos.Delete(cine);
             }
 
+        }
+
+        public async Task<IEnumerable<CineDto>> GetAll()
+        {
+            var _listaCines = await _cineRepos.GetAll();
+            
+            if(_listaCines != null)
+            {
+                return _mapper.Map<IEnumerable<Dominio._4._1_Entidades.Cine.Cine>, IEnumerable<CineDto>>(_listaCines);
+            }
+            else
+            {
+                return null;
+            }
+        
+        }
+
+        public async Task<CineDto> GetById(long cineId)
+        {
+            var cineObtenido = await _cineRepos.GetById(cineId, x => x.Include(x => x.Salas), true);
+            
+            if(cineObtenido != null)
+            {
+                return _mapper.Map<CineDto>(cineObtenido);
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public async Task Update(CineDto dto)

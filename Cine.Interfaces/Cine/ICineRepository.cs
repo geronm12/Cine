@@ -14,5 +14,9 @@ namespace Cine.Interfaces.Cine
 
         Task Delete(long cineId);
 
+        Task<CineDto> GetById(long cineId);
+
+        Task<IEnumerable<CineDto>> GetAll();
+
     }
 }

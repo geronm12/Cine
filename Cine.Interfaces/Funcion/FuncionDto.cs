@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Cine.Interfaces.Entrada;
+using Cine.Interfaces.Pelicula;
+using Cine.Interfaces.Sala;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -19,5 +22,11 @@ namespace Cine.Interfaces.Funcion
         public DateTime FechaDeEstreno { get; set; }
 
         public DateTime FechaDeBaja { get; set; }
+
+        public virtual PeliculaDto Pelicula { get; set; }
+
+        public virtual SalaDto Sala { get; set; }
+
+        public virtual EntradaDto Entrada { get; set; }
     }
 }
