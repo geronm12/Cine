@@ -23,7 +23,7 @@ namespace Cine.Implementacion.Cronograma
         public async Task Create(CronogramaDto dto)
         {
             await _cronogramaRepos.Create(_mapper.Map<Dominio._4._1_Entidades.Cronograma>(dto));
-
+           
         }
 
         public async Task Delete(long cronogramaId)
