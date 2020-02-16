@@ -12,10 +12,12 @@ namespace Cine.Dominio._4._1_Entidades
 
         public bool EsTrasnoche { get; set; }
 
+        public long FuncionId { get; set; }
 
         public virtual Dia Dia { get; set; }
 
         public virtual Horarios.Horarios Horarios {get; set;}
 
+        public virtual ICollection<Funcion> Funciones { get; set; }
     }
 }

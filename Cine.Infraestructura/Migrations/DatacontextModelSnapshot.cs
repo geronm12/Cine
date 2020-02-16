@@ -61,6 +61,9 @@ namespace Cine.Infraestructura.Migrations
                     b.Property<bool>("EstaBorrado")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<long>("FuncionId")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("HorarioId")
                         .HasColumnType("bigint");
 
@@ -119,6 +122,9 @@ namespace Cine.Infraestructura.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("bigint");
 
+                    b.Property<long?>("CronogramaId")
+                        .HasColumnType("bigint");
+
                     b.Property<long>("EntradaId")
                         .HasColumnType("bigint");
 
@@ -144,6 +150,8 @@ namespace Cine.Infraestructura.Migrations
                         .HasColumnType("bigint");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CronogramaId");
 
                     b.HasIndex("EntradaId")
                         .IsUnique();
@@ -296,6 +304,10 @@ namespace Cine.Infraestructura.Migrations
 
             modelBuilder.Entity("Cine.Dominio._4._1_Entidades.Funcion", b =>
                 {
+                    b.HasOne("Cine.Dominio._4._1_Entidades.Cronograma", null)
+                        .WithMany("Funciones")
+                        .HasForeignKey("CronogramaId");
+
                     b.HasOne("Cine.Dominio._4._1_Entidades.Entrada.Entrada", "Entrada")
                         .WithOne("Funcion")
                         .HasForeignKey("Cine.Dominio._4._1_Entidades.Funcion", "EntradaId")

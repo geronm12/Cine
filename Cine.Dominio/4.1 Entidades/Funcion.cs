@@ -11,7 +11,7 @@ namespace Cine.Dominio._4._1_Entidades
         public long SalaId { get; set; }
 
         public long EntradaId { get; set; }
-
+         
         public long EntradasDisponibles { get; set; }
 
         public decimal Precio { get; set; }
@@ -28,6 +28,8 @@ namespace Cine.Dominio._4._1_Entidades
         public virtual Sala.Sala Sala { get; set; }
 
         public virtual Entrada.Entrada Entrada{get; set;}
+
+ 
 
     }
 }

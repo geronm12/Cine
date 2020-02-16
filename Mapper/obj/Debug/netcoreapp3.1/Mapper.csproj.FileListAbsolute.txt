@@ -3,3 +3,13 @@ C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Mappe
 C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\obj\Debug\netcoreapp3.1\Mapper.csprojAssemblyReference.cache
 C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\obj\Debug\netcoreapp3.1\Mapper.AssemblyInfoInputs.cache
 C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\obj\Debug\netcoreapp3.1\Mapper.AssemblyInfo.cs
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Mapper.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Cine.Constantes.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Cine.Dominio.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Cine.Interfaces.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Cine.Dominio.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Cine.Interfaces.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Cine.Constantes.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\obj\Debug\netcoreapp3.1\Mapper.csproj.CopyComplete
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\obj\Debug\netcoreapp3.1\Mapper.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\obj\Debug\netcoreapp3.1\Mapper.pdb
