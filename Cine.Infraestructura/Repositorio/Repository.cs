@@ -13,37 +13,41 @@ namespace Cine.Infraestructura.Repositorio
 {
     public class Repository<T> : IRepository<T> where T : EntityBase
     {
+        private readonly Datacontext _context;
+
+        public Repository(Datacontext context)
+        {
+            _context = context;
+        }
+
+
+
         public async Task Create(T entidad)
         {
-            using (var context = new Datacontext())
-            {
-                await context.Set<T>().AddAsync(entidad);
+           
+            await _context.Set<T>().AddAsync(entidad);
 
 
-                await context.SaveChangesAsync();
-            }
+            await _context.SaveChangesAsync();
+            
                     
         }
 
         public async Task Delete(T entidad)
         {
-            using(var context = new Datacontext())
-            {
-                context.Entry(entidad).State = EntityState.Deleted;
+            
+            _context.Entry(entidad).State = EntityState.Deleted;
 
-                context.Set<T>().Remove(entidad);
+            _context.Set<T>().Remove(entidad);
 
-                await context.SaveChangesAsync();
-
-            }
+            await _context.SaveChangesAsync();
+             
         }
 
         public async Task<IEnumerable<T>> GetAll(Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null, bool entrableTracking = true)
         {
-  
-            using (var context = new Datacontext())
-            {
-                IQueryable<T> query = context.Set<T>();
+   
+                IQueryable<T> query = _context.Set<T>();
 
                 if(entrableTracking)
                 {
@@ -60,7 +64,7 @@ namespace Cine.Infraestructura.Repositorio
                     ? await orderBy(query).ToListAsync()
                     : await query.ToListAsync();
 
-            }
+            
         }
 
         public async Task<IEnumerable<T>> GetByFilter(Expression<Func<T, bool>> predicate = null, 
@@ -68,9 +72,7 @@ namespace Cine.Infraestructura.Repositorio
             Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null, 
             bool enableTracking = true)
         {
-            using (var context = new Datacontext())
-            {
-                IQueryable<T> query = context.Set<T>();
+              IQueryable<T> query = _context.Set<T>();
 
                 if (enableTracking)
                 {
@@ -91,15 +93,13 @@ namespace Cine.Infraestructura.Repositorio
                await orderBy(query).ToListAsync() :
                await query.ToListAsync();
                 
-
-            }
+ 
         }
 
         public async Task<T>GetById(long id, Func<IQueryable<T>, IIncludableQueryable<T, object>> include = null, bool enableTracking = true)
         {
-            using(var context = new Datacontext())
-            {
-                IQueryable<T> query = context.Set<T>();
+             
+                IQueryable<T> query = _context.Set<T>();
 
                 if(enableTracking)
                 {
@@ -113,19 +113,18 @@ namespace Cine.Infraestructura.Repositorio
 
 
                 return await query.FirstOrDefaultAsync(x => x.Id == id);
-            }
+            
         }
 
         public async Task Update(T entidad)
         {
-            using(var context = new Datacontext())
-            {
-                context.Entry(entidad).State = EntityState.Modified;
+            
+           _context.Entry(entidad).State = EntityState.Modified;
 
-                context.Set<T>().Update(entidad);
+           _context.Set<T>().Update(entidad);
 
-                await context.SaveChangesAsync();
-            }
+           await _context.SaveChangesAsync();
+            
         }
     }
 }

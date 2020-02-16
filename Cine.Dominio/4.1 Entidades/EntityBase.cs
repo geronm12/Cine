@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Cine.Dominio._4._1_Entidades
 {
-    public class EntityBase
+    public abstract class EntityBase
     {
         [Key]
         public long Id { get; set; }

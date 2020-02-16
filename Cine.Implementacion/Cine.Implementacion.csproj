@@ -4,4 +4,20 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Cine\" />
+    <Folder Include="Cronograma\" />
+    <Folder Include="Dia\" />
+    <Folder Include="Entrada\" />
+    <Folder Include="Funcion\" />
+    <Folder Include="Horario\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cine.Infraestructura\Cine.Infraestructura.csproj" />
+    <ProjectReference Include="..\Cine.Interfaces\Cine.Interfaces.csproj" />
+    <ProjectReference Include="..\HelpersServicios\HelpersServicios.csproj" />
+    <ProjectReference Include="..\Mapper\Mapper.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,0 +1,5 @@
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Mapper.deps.json
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\bin\Debug\netcoreapp3.1\Mapper.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\obj\Debug\netcoreapp3.1\Mapper.csprojAssemblyReference.cache
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\obj\Debug\netcoreapp3.1\Mapper.AssemblyInfoInputs.cache
+C:\Users\gerol\source\repos\PracticaAsp.Net\Mapper\obj\Debug\netcoreapp3.1\Mapper.AssemblyInfo.cs
