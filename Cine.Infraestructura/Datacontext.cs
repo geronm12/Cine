@@ -62,6 +62,10 @@ namespace Cine.Infraestructura
                 .WithMany(x => x.Cronogramas).HasForeignKey(x => x.HorarioId)
                 .HasConstraintName("FK_Horario_Cronograma");
 
+            modelBuilder.Entity<Cronograma>().HasOne(x => x.Funcion)
+                .WithOne(x => x.Cronograma).HasForeignKey<Cronograma>(x => x.FuncionId).HasConstraintName("FK_Cronograma_Funcion");
+
+
             //Dia
 
             modelBuilder.Entity<Dia>().HasMany(x => x.Cronogramas)
@@ -82,6 +86,9 @@ namespace Cine.Infraestructura
 
             modelBuilder.Entity<Funcion>().HasOne(x => x.Sala).WithMany(x => x.Funciones)
                 .HasForeignKey(x => x.SalaId).HasConstraintName("FK_Funciones_Sala");
+
+            modelBuilder.Entity<Funcion>().HasOne(x => x.Cronograma).WithOne(x => x.Funcion).HasForeignKey<Cronograma>(x => x.FuncionId)
+                .HasConstraintName("FK_Funcion_Cronograma");
 
             //Horario
 

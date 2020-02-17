@@ -116,13 +116,9 @@ namespace Cine.Implementacion.ConsultasServicio
             var entradaDto = new EntradaDto();
  
             var entradaEncontrada = entrada.First(x => x.Funcion.Id == funcionId);
-            entradaEncontrada.Cantidad = entradaEncontrada.Cantidad - cantidadEntradas;
+            entradaEncontrada.Cantidad -= cantidadEntradas;
             await _entradaRepos.Update(entradaEncontrada);
             
-
-        
-       
-        
         }
     }
 }

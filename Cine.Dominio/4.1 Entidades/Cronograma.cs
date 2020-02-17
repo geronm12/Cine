@@ -18,6 +18,8 @@ namespace Cine.Dominio._4._1_Entidades
 
         public virtual Horarios.Horarios Horarios {get; set;}
 
-        public virtual ICollection<Funcion> Funciones { get; set; }
+    
+        public virtual Funcion Funcion { get; set; }
+        
     }
 }

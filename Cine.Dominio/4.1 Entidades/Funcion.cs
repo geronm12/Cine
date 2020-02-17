@@ -29,6 +29,7 @@ namespace Cine.Dominio._4._1_Entidades
 
         public virtual Entrada.Entrada Entrada{get; set;}
 
+        public virtual Cronograma Cronograma { get; set; }
  
 
     }
