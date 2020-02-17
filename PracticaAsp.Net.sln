@@ -39,13 +39,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.4 Api", "2.4 Api", "{04E9
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cine.ConexionSql", "ConexionSql\Cine.ConexionSql.csproj", "{439ACF65-84FC-409A-9D09-B314FE6B77A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cine.Constantes", "Cine.Constantes\Cine.Constantes.csproj", "{3B1CBDAC-C46C-4795-B667-391CD24F7BC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cine.Constantes", "Cine.Constantes\Cine.Constantes.csproj", "{3B1CBDAC-C46C-4795-B667-391CD24F7BC1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.3 AutoMapper", "3.3 AutoMapper", "{FEC0339B-76CB-4A77-8142-C93A90229BA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapper", "Mapper\Mapper.csproj", "{45AA1FE5-DB97-4243-A82B-3A0A24CEE4BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mapper", "Mapper\Mapper.csproj", "{45AA1FE5-DB97-4243-A82B-3A0A24CEE4BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelpersServicios", "HelpersServicios\HelpersServicios.csproj", "{C946053C-6D64-4A4C-ACA0-113DC53CB6D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpersServicios", "HelpersServicios\HelpersServicios.csproj", "{C946053C-6D64-4A4C-ACA0-113DC53CB6D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{4CB901F5-8019-491A-8D10-FE10177EA377}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{C946053C-6D64-4A4C-ACA0-113DC53CB6D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C946053C-6D64-4A4C-ACA0-113DC53CB6D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C946053C-6D64-4A4C-ACA0-113DC53CB6D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CB901F5-8019-491A-8D10-FE10177EA377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CB901F5-8019-491A-8D10-FE10177EA377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CB901F5-8019-491A-8D10-FE10177EA377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CB901F5-8019-491A-8D10-FE10177EA377}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +113,7 @@ Global
 		{FEC0339B-76CB-4A77-8142-C93A90229BA9} = {17E927AF-CF31-42CA-B46D-49B5265855B1}
 		{45AA1FE5-DB97-4243-A82B-3A0A24CEE4BE} = {FEC0339B-76CB-4A77-8142-C93A90229BA9}
 		{C946053C-6D64-4A4C-ACA0-113DC53CB6D7} = {DB55CDD4-2FE7-4654-8EB0-9F617CE31844}
+		{4CB901F5-8019-491A-8D10-FE10177EA377} = {5A447A84-8831-43EC-A768-64AF190F15C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5D8442C5-7E49-4465-8766-BAE3ADC73EAF}

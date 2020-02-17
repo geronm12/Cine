@@ -1,0 +1,5 @@
+C:\Users\gerol\source\repos\PracticaAsp.Net\IoC\bin\Debug\netcoreapp3.1\IoC.deps.json
+C:\Users\gerol\source\repos\PracticaAsp.Net\IoC\bin\Debug\netcoreapp3.1\IoC.dll
+C:\Users\gerol\source\repos\PracticaAsp.Net\IoC\obj\Debug\netcoreapp3.1\IoC.csprojAssemblyReference.cache
+C:\Users\gerol\source\repos\PracticaAsp.Net\IoC\obj\Debug\netcoreapp3.1\IoC.AssemblyInfoInputs.cache
+C:\Users\gerol\source\repos\PracticaAsp.Net\IoC\obj\Debug\netcoreapp3.1\IoC.AssemblyInfo.cs
