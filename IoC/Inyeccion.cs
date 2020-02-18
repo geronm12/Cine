@@ -31,42 +31,46 @@ using System.Text;
 
 namespace IoC
 {
-    public static class Inyeccion <T> where T : EntityBase
+    public static partial class Inyeccion
     {
 
-        public static void ConfigurationServices(IServiceCollection services)
+        public static class Servicios<T> where T : EntityBase
         {
-            services.AddDbContext<Datacontext>();
+            public static void ConfigurationServices(IServiceCollection services)
+            {
+                services.AddDbContext<Datacontext>();
 
-            services.AddTransient<ICineRepository, CineRepository>();
+                services.AddTransient<ICineRepository, CineRepository>();
 
-            services.AddTransient<ICronogramaRepository, CronogramaRepository>();
+                services.AddTransient<ICronogramaRepository, CronogramaRepository>();
 
-            services.AddTransient<IPeliculaRepository, PeliculaRepository>();
+                services.AddTransient<IPeliculaRepository, PeliculaRepository>();
 
-            services.AddTransient<IHorarioRepository, HorarioRepository>();
+                services.AddTransient<IHorarioRepository, HorarioRepository>();
 
-            services.AddTransient<ISalaRepository, SalaRepository>();
+                services.AddTransient<ISalaRepository, SalaRepository>();
 
-            services.AddTransient<IEntradaRepository, EntradaRepository>();
+                services.AddTransient<IEntradaRepository, EntradaRepository>();
 
-            services.AddTransient<IDiaRepository, DiaRepository>();
+                services.AddTransient<IDiaRepository, DiaRepository>();
 
-            services.AddTransient<IFuncionRepository, FuncionRepository>();
+                services.AddTransient<IFuncionRepository, FuncionRepository>();
 
-            services.AddTransient<IUsuarioRepository, UsuarioRepositorio>();
+                services.AddTransient<IUsuarioRepository, UsuarioRepositorio>();
 
-            services.AddTransient<IEncryptar, Encripter>();
+                services.AddTransient<IEncryptar, Encripter>();
 
-            services.AddTransient<IFuncionConsultaServicio, FuncionConsultaServicio>();
+                services.AddTransient<IFuncionConsultaServicio, FuncionConsultaServicio>();
 
-            services.AddTransient<ICronogramaConsultaServicio, CronogramaConsultaServicio>();
+                services.AddTransient<ICronogramaConsultaServicio, CronogramaConsultaServicio>();
 
-            services.AddTransient<ICineSalaServicio, CineSalaConsultaServicio>();
-            
-            services.AddTransient<IRepository<T>, Repository<T>>();
+                services.AddTransient<ICineSalaServicio, CineSalaConsultaServicio>();
 
+                services.AddTransient<IRepository<T>, Repository<T>>();
+
+            }
         }
+       
 
     }
 }
