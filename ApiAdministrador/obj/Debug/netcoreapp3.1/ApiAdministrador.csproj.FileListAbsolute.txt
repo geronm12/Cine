@@ -72,8 +72,8 @@ C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\bin\Debug\netcoreap
 C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\bin\Debug\netcoreapp3.1\IoC.pdb
-C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\obj\Debug\netcoreapp3.1\ApiAdministrador.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\obj\Debug\netcoreapp3.1\ApiAdministrador.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\obj\Debug\netcoreapp3.1\ApiAdministrador.csproj.CopyComplete
 C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\obj\Debug\netcoreapp3.1\ApiAdministrador.dll
 C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\obj\Debug\netcoreapp3.1\ApiAdministrador.pdb
+C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\obj\Debug\netcoreapp3.1\ApiAdministrador.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\gerol\source\repos\PracticaAsp.Net\ApiAdministrador\obj\Debug\netcoreapp3.1\ApiAdministrador.MvcApplicationPartsAssemblyInfo.cache
