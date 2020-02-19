@@ -1,42 +1,39 @@
-<<<<<<< HEAD
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
-WORKDIR /app
-EXPOSE 80
-
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
-WORKDIR /src
-COPY ["PracticaAsp.Net/PracticaAsp.Net.sln", "PracticaAsp.Net/"]
-RUN dotnet restore "PracticaAsp.Net/PracticaAsp.Net.sln"
-COPY . .
-WORKDIR "/src/PracticaAsp.Net"
-RUN dotnet build "PracticaAsp.Net.sln" -c Release -o /app/build
+WORKDIR /app
 
-FROM build AS publish
-RUN dotnet publish "PracticaAsp.Net.sln" -c Release -o /app/publish
-=======
-#Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
-#For more information, please see https://aka.ms/containercompat
+COPY *.sln .
+COPY ApiAdministrador/*.csproj ./ApiAdministrador/
+COPY Cine.Constantes/*.csproj ./Cine.Constantes/
+COPY Cine.Dominio/*.csproj ./Cine.Dominio/
+COPY Cine.Implementacion/*.csproj ./Cine.Implementacion/
+COPY Cine.Infraestructura/*.csproj ./Cine.Infraestructura/
+COPY Cine.Interfaces/*.csproj ./Cine.Interfaces/
+COPY ConexionSql/*.csproj ./ConexionSql/
+COPY HelpersServicios/*.csproj ./HelpersServicios/
+COPY IoC/*.csproj  ./IoC/
+COPY MetaDatos/*csproj ./MetaDatos
+COPY Servicios/*.csproj ./Servicios
+COPY Mapper/*.csproj ./Mapper
+RUN dotnet restore
+ 
+COPY ApiAdministrador/. ./ApiAdministrador/
+COPY Cine.Constantes/. ./Cine.Constantes/
+COPY Cine.Dominio/. ./Cine.Dominio/
+COPY Cine.Implementacion/. ./Cine.Implementacion/
+COPY Cine.Infraestructura/. ./Cine.Infraestructura/
+COPY Cine.Interfaces/. ./Cine.Interfaces/
+COPY ConexionSql/.  ./ConexionSql/
+COPY HelpersServicios/.  ./HelpersServicios/
+COPY IoC/. ./IoC/
+COPY Mapper/.  ./Mapper
+COPY MetaDatos/. ./MetaDatos
+COPY Servicios/.  ./Servicios
+WORKDIR /app/PracticaAsp.Net
+RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1809 AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
 WORKDIR /app
 EXPOSE 80
+COPY --from=build-env /app/out .
+ENTRYPOINT [ "dotnet", "PracticaAsp.Net.dll" ]
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1809 AS build
-WORKDIR /src
-COPY ["ApiAdministrador/ApiAdministrador.csproj", "ApiAdministrador/"]
-RUN dotnet restore "ApiAdministrador/ApiAdministrador.csproj"
-COPY . .
-RUN dotnet build "ApiAdministrador.csproj" -c Release -o /app/build
-
-FROM build AS publish
-RUN dotnet publish "ApiAdministrador.csproj" -c Release -o /app/publish
->>>>>>> master
-
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "PracticaAsp.Net.dll"]
-<<<<<<< HEAD
-=======
-       
->>>>>>> master
