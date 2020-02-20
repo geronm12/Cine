@@ -47,11 +47,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mapper", "Mapper\Mapper.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelpersServicios", "HelpersServicios\HelpersServicios.csproj", "{C946053C-6D64-4A4C-ACA0-113DC53CB6D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{4CB901F5-8019-491A-8D10-FE10177EA377}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoC", "IoC\IoC.csproj", "{4CB901F5-8019-491A-8D10-FE10177EA377}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Administrador", "Administrador", "{5429CB79-B804-4297-AB27-D262042CB7D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiAdministrador", "ApiAdministrador\ApiAdministrador.csproj", "{2EF401D9-DEF3-4606-84DD-263DF4319224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiAdministrador", "ApiAdministrador\ApiAdministrador.csproj", "{2EF401D9-DEF3-4606-84DD-263DF4319224}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -100,6 +100,7 @@ namespace Cine.Infraestructura.Encriptador
 
             var needsUpgrade = iterations != Options.Iterations;
 
+            
             using var algoritm = new Rfc2898DeriveBytes(password, salt, iterations, HashAlgorithmName.SHA512);
 
             var ketToCheck = algoritm.GetBytes(keysize);

@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+FROM mcr.microsoft.com/dotnet/core-nightly/sdk:5.0 AS build
 WORKDIR /app/PracticaAsp.Net
 
 COPY *.sln .
@@ -33,10 +33,12 @@ COPY Mapper/. ./Mapper/
 WORKDIR /app/PracticaAsp.Net
 RUN dotnet publish -c Release -o out
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS runtime
+
+FROM mcr.microsoft.com/dotnet/core-nightly/sdk:5.0
 WORKDIR /app/PracticaAsp.Net
-EXPOSE 80
+
+
 
 COPY --from=build /app/PracticaAsp.Net/out ./
-ENTRYPOINT [ "dotnet", "PracticaAsp.Net.dll" ]
+ENTRYPOINT ["dotnet", "PracticaAsp.Net.dll"]
 
