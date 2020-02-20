@@ -274,8 +274,8 @@ namespace Cine.Infraestructura.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
-                        .HasColumnType("varchar(20) CHARACTER SET utf8mb4")
-                        .HasMaxLength(20);
+                        .HasColumnType("varchar(500) CHARACTER SET utf8mb4")
+                        .HasMaxLength(500);
 
                     b.Property<string>("TipoUsuario")
                         .IsRequired()

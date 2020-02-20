@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Cine.Dominio._4._1_Entidades.Usuario;
+using Cine.Dominio._4._4_Method;
 using Cine.Infraestructura;
 using Cine.Interfaces.Repositorio;
 using Cine.Interfaces.Usuario;
@@ -8,6 +9,7 @@ using Mapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
@@ -34,7 +36,7 @@ namespace Cine.Implementacion.Usuario
         public async Task Create(UsuarioDto dto)
         {
 
-            var passwordEncriptado = _encryptar.Encriptar(dto.Password, _encryptar.GetKey());
+            var passwordEncriptado = _encryptar.Hash(dto.Password);
 
             dto.Password = passwordEncriptado;
             
@@ -56,11 +58,32 @@ namespace Cine.Implementacion.Usuario
 
         public async Task<bool> Login(string nombre, string password)
         {
+            //Expression<Func<Dominio._4._1_Entidades.Usuario.Usuario, bool>> pred = x => true;
+            //pred = pred.And(x => x.Nombre == nombre && _encryptar.Desencriptar(x.Password, _encryptar.GetKey()) == password);
+
+        
+
             bool esValido = await Task.Run(() =>
             {
-                return _usuarioRepos.GetByFilter(predicate: x => x.Nombre == nombre 
-                && _encryptar.Desencriptar(x.Password, _encryptar.GetKey()) 
-                == password, null, null, false) != null ? true : false;
+            var usuario = _usuarioRepos.GetByFilter(predicate: x => x.Nombre.Equals(nombre), null, null, false).Result;
+
+            var _usuarioSelec = usuario.FirstOrDefault(x => x.Nombre == nombre);
+
+            if (usuario.Count() > 0)
+            {
+                (bool check, bool needsUpgrade) = _encryptar.Check(_usuarioSelec.Password, password);
+
+
+                if(check && !needsUpgrade)
+                {
+
+                   return true;
+                    
+                }
+                
+            }
+ 
+                return false;
             });
 
             return esValido;

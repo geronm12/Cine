@@ -1,14 +1,27 @@
-﻿using System;
+﻿using Cine.Implementacion.Encriptador;
+using Microsoft.Extensions.Options;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 
 namespace Cine.Infraestructura.Encriptador
 {
-    public class Encripter: IEncryptar
+    public sealed class Encripter: IEncryptar
     {
         public static string Llave => "jwey89e09ewgfo24";
 
+        public const int saltsize = 16;
+        public const int keysize = 32;
+
+         
+        public Encripter(IOptions<HashingOptions> options)
+        {
+            Options = options.Value;
+
+        }
+        private HashingOptions Options { get; }
         public string Encriptar(string dato, string llave)
         {
             byte[] keyArray;
@@ -60,5 +73,40 @@ namespace Cine.Infraestructura.Encriptador
             return Llave;
         }
 
+        public string Hash(string password)
+        {
+            using var algoritm = new Rfc2898DeriveBytes(password, saltsize, Options.Iterations, HashAlgorithmName.SHA512);
+            var key = Convert.ToBase64String(algoritm.GetBytes(keysize));
+
+            var salt = Convert.ToBase64String(algoritm.Salt);
+
+            return $"{Options.Iterations}.{salt}.{key}";
+        }
+
+        public (bool Verified, bool NeedsUpgrade) Check(string hash, string password)
+        {
+            var parts = hash.Split('.', 3);
+
+            if(parts.Length != 3)
+            {
+                throw new FormatException("Unexpected hash format..." +
+                    "Should be formatted as  `{iterations}.{salt}.{hash}`");
+
+            }
+
+            var iterations = Convert.ToInt32(parts[0]);
+            var salt = Convert.FromBase64String(parts[1]);
+            var key = Convert.FromBase64String(parts[2]);
+
+            var needsUpgrade = iterations != Options.Iterations;
+
+            using var algoritm = new Rfc2898DeriveBytes(password, salt, iterations, HashAlgorithmName.SHA512);
+
+            var ketToCheck = algoritm.GetBytes(keysize);
+
+            var verified = ketToCheck.SequenceEqual(key);
+
+            return (verified, needsUpgrade);
+        }
     }
 }

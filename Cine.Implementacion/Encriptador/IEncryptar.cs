@@ -10,6 +10,11 @@ namespace Cine.Infraestructura
 
         string Desencriptar(string dato, string llave);
 
+
+        string Hash(string password);
+
+        (bool Verified, bool NeedsUpgrade) Check(string hash, string password);
+
         string GetKey();
 
     }

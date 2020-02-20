@@ -54,7 +54,7 @@ namespace ApiAdministrador
             }));
 
 
-            //ConfigureServices(services);
+            ConfigurationServices(services);
 
 
         }

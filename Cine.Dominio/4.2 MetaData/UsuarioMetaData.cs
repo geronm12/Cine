@@ -13,7 +13,7 @@ namespace Cine.Dominio._4._2_MetaData.Usuario
         {
             builder.Property(x => x.Nombre).HasMaxLength(20).IsRequired();
 
-            builder.Property(x => x.Password).HasMaxLength(20).IsRequired();
+            builder.Property(x => x.Password).HasMaxLength(500).IsRequired();
 
             builder.Property(x => x.TipoUsuario).HasConversion(x => x.ToString(), e => (TipoUsuario)Enum.Parse(typeof(TipoUsuario), e)).IsRequired();
                  
