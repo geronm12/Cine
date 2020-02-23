@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ApiAdministrador\\ApiAdministrador.csproj": {}
+    "C:\\Users\\gerol\\source\\repos\\Cine\\ApiAdministrador\\ApiAdministrador.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ApiAdministrador\\ApiAdministrador.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\ApiAdministrador\\ApiAdministrador.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ApiAdministrador\\ApiAdministrador.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\ApiAdministrador\\ApiAdministrador.csproj",
         "projectName": "ApiAdministrador",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ApiAdministrador\\ApiAdministrador.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ApiAdministrador\\ApiAdministrador.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ApiAdministrador\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ApiAdministrador\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,14 +32,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\Cine.Implementacion.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\Cine.Implementacion.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\Cine.Implementacion.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\Cine.Implementacion.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\IoC\\IoC.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\IoC\\IoC.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\IoC\\IoC.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\IoC\\IoC.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj"
               }
             }
           }
@@ -98,14 +98,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj",
         "projectName": "Cine.Constantes",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -155,14 +155,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj",
         "projectName": "Cine.Dominio",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -183,8 +183,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj"
               }
             }
           }
@@ -232,14 +232,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\Cine.Implementacion.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\Cine.Implementacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\Cine.Implementacion.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\Cine.Implementacion.csproj",
         "projectName": "Cine.Implementacion",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\Cine.Implementacion.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\Cine.Implementacion.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -260,17 +260,17 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\HelpersServicios\\HelpersServicios.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\HelpersServicios\\HelpersServicios.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\HelpersServicios\\HelpersServicios.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\HelpersServicios\\HelpersServicios.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj"
               }
             }
           }
@@ -302,14 +302,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj",
         "projectName": "Cine.Infraestructura",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -330,14 +330,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj"
               }
             }
           }
@@ -385,14 +385,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj",
         "projectName": "Cine.Interfaces",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -413,8 +413,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj"
               }
             }
           }
@@ -446,14 +446,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj",
         "projectName": "Cine.ConexionSql",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -509,14 +509,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\HelpersServicios\\HelpersServicios.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\HelpersServicios\\HelpersServicios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\HelpersServicios\\HelpersServicios.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\HelpersServicios\\HelpersServicios.csproj",
         "projectName": "HelpersServicios",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\HelpersServicios\\HelpersServicios.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\HelpersServicios\\HelpersServicios.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\HelpersServicios\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\HelpersServicios\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -566,14 +566,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\IoC\\IoC.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\IoC\\IoC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\IoC\\IoC.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\IoC\\IoC.csproj",
         "projectName": "IoC",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\IoC\\IoC.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\IoC\\IoC.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\IoC\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\IoC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -594,11 +594,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\Cine.Implementacion.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\Cine.Implementacion.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\Cine.Implementacion.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\Cine.Implementacion.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj"
               }
             }
           }
@@ -636,14 +636,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj",
         "projectName": "Mapper",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -664,11 +664,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj"
               }
             }
           }

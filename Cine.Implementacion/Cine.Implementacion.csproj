@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Analyzers" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Cine.Infraestructura\Cine.Infraestructura.csproj" />
     <ProjectReference Include="..\Cine.Interfaces\Cine.Interfaces.csproj" />
     <ProjectReference Include="..\HelpersServicios\HelpersServicios.csproj" />

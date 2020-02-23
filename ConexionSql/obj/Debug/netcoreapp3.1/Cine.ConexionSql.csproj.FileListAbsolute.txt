@@ -6,3 +6,11 @@ C:\Users\gerol\source\repos\PracticaAsp.Net\ConexionSql\obj\Debug\netcoreapp3.1\
 C:\Users\gerol\source\repos\PracticaAsp.Net\ConexionSql\bin\Debug\netcoreapp3.1\Cine.ConexionSql.pdb
 C:\Users\gerol\source\repos\PracticaAsp.Net\ConexionSql\obj\Debug\netcoreapp3.1\Cine.ConexionSql.dll
 C:\Users\gerol\source\repos\PracticaAsp.Net\ConexionSql\obj\Debug\netcoreapp3.1\Cine.ConexionSql.pdb
+C:\Users\gerol\source\repos\Cine\ConexionSql\bin\Debug\netcoreapp3.1\Cine.ConexionSql.deps.json
+C:\Users\gerol\source\repos\Cine\ConexionSql\bin\Debug\netcoreapp3.1\Cine.ConexionSql.dll
+C:\Users\gerol\source\repos\Cine\ConexionSql\bin\Debug\netcoreapp3.1\Cine.ConexionSql.pdb
+C:\Users\gerol\source\repos\Cine\ConexionSql\obj\Debug\netcoreapp3.1\Cine.ConexionSql.csprojAssemblyReference.cache
+C:\Users\gerol\source\repos\Cine\ConexionSql\obj\Debug\netcoreapp3.1\Cine.ConexionSql.AssemblyInfoInputs.cache
+C:\Users\gerol\source\repos\Cine\ConexionSql\obj\Debug\netcoreapp3.1\Cine.ConexionSql.AssemblyInfo.cs
+C:\Users\gerol\source\repos\Cine\ConexionSql\obj\Debug\netcoreapp3.1\Cine.ConexionSql.dll
+C:\Users\gerol\source\repos\Cine\ConexionSql\obj\Debug\netcoreapp3.1\Cine.ConexionSql.pdb

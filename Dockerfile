@@ -1,44 +1,31 @@
-FROM mcr.microsoft.com/dotnet/core-nightly/sdk:5.0 AS build
-WORKDIR /app/PracticaAsp.Net
+#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-COPY *.sln .
-COPY ApiAdministrador/*.csproj ./ApiAdministrador/
-COPY Cine.Constantes/*.csproj ./Cine.Constantes/
-COPY Cine.Dominio/*.csproj ./Cine.Dominio/
-COPY Cine.Implementacion/*.csproj ./Cine.Implementacion/
-COPY Cine.Infraestructura/*.csproj ./Cine.Infraestructura/
-COPY Cine.Interfaces/*.csproj ./Cine.Interfaces/
-COPY ConexionSql/*.csproj ./ConexionSql/
-COPY HelpersServicios/*.csproj ./HelpersServicios/
-COPY IoC/*.csproj  ./IoC/
-COPY MetaDatos/*.csproj ./MetaDatos/
-COPY Servicios/*.csproj ./Servicios/
-COPY Mapper/*.csproj ./Mapper/ 
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
 
-RUN dotnet restore   
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+WORKDIR /src
+COPY ["CineApi/CineApi.csproj", "CineApi/"]
+COPY ["Cine.Implementacion/Cine.Implementacion.csproj", "Cine.Implementacion/"]
+COPY ["HelpersServicios/HelpersServicios.csproj", "HelpersServicios/"]
+COPY ["Cine.Infraestructura/Cine.Infraestructura.csproj", "Cine.Infraestructura/"]
+COPY ["Cine.Interfaces/Cine.Interfaces.csproj", "Cine.Interfaces/"]
+COPY ["Cine.Dominio/Cine.Dominio.csproj", "Cine.Dominio/"]
+COPY ["Cine.Constantes/Cine.Constantes.csproj", "Cine.Constantes/"]
+COPY ["ConexionSql/Cine.ConexionSql.csproj", "ConexionSql/"]
+COPY ["Mapper/Mapper.csproj", "Mapper/"]
+COPY ["IoC/IoC.csproj", "IoC/"]
+RUN dotnet restore "CineApi/CineApi.csproj"
+COPY . .
+WORKDIR /src/CineApi
+RUN dotnet build "CineApi.csproj" -c Release -o /app/build
 
-COPY ApiAdministrador/. ./ApiAdministrador/
-COPY Cine.Constantes/. ./Cine.Constantes/
-COPY Cine.Dominio/.  ./Cine.Dominio/
-COPY Cine.Implementacion/. ./Cine.Implementacion/
-COPY Cine.Infraestructura/. ./Cine.Infraestructura/
-COPY Cine.Interfaces/. ./Cine.Interfaces/
-COPY ConexionSql/. ./ConexionSql/
-COPY HelpersServicios/. ./HelpersServicios/
-COPY IoC/. ./IoC/
-COPY MetaDatos/. ./MetaDatos/
-COPY Servicios/.  ./Servicios/
-COPY Mapper/. ./Mapper/
+FROM build AS publish
+RUN dotnet publish "CineApi.csproj" -c Release -o /app/publish
 
-WORKDIR /app/PracticaAsp.Net
-RUN dotnet publish -c Release -o out
-
-
-FROM mcr.microsoft.com/dotnet/core-nightly/sdk:5.0
-WORKDIR /app/PracticaAsp.Net
-
-
-
-COPY --from=build /app/PracticaAsp.Net/out ./
-ENTRYPOINT ["dotnet", "PracticaAsp.Net.dll"]
-
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "CineApi.dll"]

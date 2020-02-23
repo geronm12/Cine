@@ -1,11 +1,38 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "Microsoft.EntityFrameworkCore.Analyzers/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/_._": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.EntityFrameworkCore.Analyzers/3.1.2": {
+      "sha512": "2v0Md70wiGS1vmco8/koAz93eOSusFh83OqwYWFxhxS6wSii7LDOhWL5Ww/zRsuGkxH4uWtNkMg5gLXBTs64Jg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.analyzers/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
+        "lib/netstandard2.0/_._",
+        "microsoft.entityframeworkcore.analyzers.3.1.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "Microsoft.EntityFrameworkCore.Analyzers >= 3.1.2"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\gerol\\.nuget\\packages\\": {},
@@ -15,11 +42,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj",
+      "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj",
       "projectName": "Cine.Constantes",
-      "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj",
+      "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj",
       "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\obj\\",
+      "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -50,6 +77,12 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": {
+            "target": "Package",
+            "version": "[3.1.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

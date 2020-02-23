@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj": {}
+    "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj",
         "projectName": "Cine.ConexionSql",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -43,6 +43,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[3.1.1, )"

@@ -9433,11 +9433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ApiAdministrador\\ApiAdministrador.csproj",
+      "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\ApiAdministrador\\ApiAdministrador.csproj",
       "projectName": "ApiAdministrador",
-      "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ApiAdministrador\\ApiAdministrador.csproj",
+      "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ApiAdministrador\\ApiAdministrador.csproj",
       "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ApiAdministrador\\obj\\",
+      "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ApiAdministrador\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -9458,14 +9458,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\Cine.Implementacion.csproj": {
-              "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Implementacion\\Cine.Implementacion.csproj"
+            "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\Cine.Implementacion.csproj": {
+              "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Implementacion\\Cine.Implementacion.csproj"
             },
-            "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\IoC\\IoC.csproj": {
-              "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\IoC\\IoC.csproj"
+            "C:\\Users\\gerol\\source\\repos\\Cine\\IoC\\IoC.csproj": {
+              "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\IoC\\IoC.csproj"
             },
-            "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj": {
-              "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj"
+            "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj": {
+              "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj"
             }
           }
         }

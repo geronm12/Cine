@@ -11,3 +11,16 @@ C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\bin\Debug\netcoreapp
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Constantes.pdb
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.csprojAssemblyReference.cache
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.csproj.CopyComplete
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Interfaces.deps.json
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Interfaces.dll
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Interfaces.pdb
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Constantes.dll
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Dominio.dll
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Dominio.pdb
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\bin\Debug\netcoreapp3.1\Cine.Constantes.pdb
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.csprojAssemblyReference.cache
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.AssemblyInfoInputs.cache
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.AssemblyInfo.cs
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.csproj.CopyComplete
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.dll
+C:\Users\gerol\source\repos\Cine\Cine.Interfaces\obj\Debug\netcoreapp3.1\Cine.Interfaces.pdb

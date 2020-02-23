@@ -11,3 +11,16 @@ C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Dominio\bin\Debug\netcoreapp3.1
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Dominio\bin\Debug\netcoreapp3.1\Cine.Dominio.runtimeconfig.dev.json
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Dominio\bin\Debug\netcoreapp3.1\Cine.Constantes.pdb
 C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Dominio\obj\Debug\netcoreapp3.1\Cine.Dominio.csproj.CopyComplete
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\bin\Debug\netcoreapp3.1\Cine.Dominio.deps.json
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\bin\Debug\netcoreapp3.1\Cine.Dominio.runtimeconfig.json
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\bin\Debug\netcoreapp3.1\Cine.Dominio.runtimeconfig.dev.json
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\bin\Debug\netcoreapp3.1\Cine.Dominio.dll
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\bin\Debug\netcoreapp3.1\Cine.Dominio.pdb
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\bin\Debug\netcoreapp3.1\Cine.Constantes.dll
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\bin\Debug\netcoreapp3.1\Cine.Constantes.pdb
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\obj\Debug\netcoreapp3.1\Cine.Dominio.csprojAssemblyReference.cache
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\obj\Debug\netcoreapp3.1\Cine.Dominio.AssemblyInfoInputs.cache
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\obj\Debug\netcoreapp3.1\Cine.Dominio.AssemblyInfo.cs
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\obj\Debug\netcoreapp3.1\Cine.Dominio.csproj.CopyComplete
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\obj\Debug\netcoreapp3.1\Cine.Dominio.dll
+C:\Users\gerol\source\repos\Cine\Cine.Dominio\obj\Debug\netcoreapp3.1\Cine.Dominio.pdb

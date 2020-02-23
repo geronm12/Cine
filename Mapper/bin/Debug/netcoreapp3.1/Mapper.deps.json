@@ -10,7 +10,8 @@
         "dependencies": {
           "AutoMapper": "9.0.0",
           "Cine.Dominio": "1.0.0",
-          "Cine.Interfaces": "1.0.0"
+          "Cine.Interfaces": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.2"
         },
         "runtime": {
           "Mapper.dll": {}
@@ -81,7 +82,7 @@
           "Microsoft.Bcl.AsyncInterfaces": "1.1.0",
           "Microsoft.Bcl.HashCode": "1.1.0",
           "Microsoft.EntityFrameworkCore.Abstractions": "3.1.1",
-          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.1",
+          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.2",
           "Microsoft.Extensions.Caching.Memory": "3.1.1",
           "Microsoft.Extensions.DependencyInjection": "3.1.1",
           "Microsoft.Extensions.Logging": "3.1.1",
@@ -104,7 +105,7 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/3.1.1": {},
+      "Microsoft.EntityFrameworkCore.Analyzers/3.1.2": {},
       "Microsoft.EntityFrameworkCore.Relational/3.1.1": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.1"
@@ -849,6 +850,9 @@
         }
       },
       "Cine.Constantes/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.2"
+        },
         "runtime": {
           "Cine.Constantes.dll": {}
         }
@@ -857,6 +861,7 @@
         "dependencies": {
           "Cine.Constantes": "1.0.0",
           "Microsoft.EntityFrameworkCore": "3.1.1",
+          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1"
         },
         "runtime": {
@@ -865,7 +870,8 @@
       },
       "Cine.Interfaces/1.0.0": {
         "dependencies": {
-          "Cine.Dominio": "1.0.0"
+          "Cine.Dominio": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.2"
         },
         "runtime": {
           "Cine.Interfaces.dll": {}
@@ -928,12 +934,12 @@
       "path": "microsoft.entityframeworkcore.abstractions/3.1.1",
       "hashPath": "microsoft.entityframeworkcore.abstractions.3.1.1.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/3.1.1": {
+    "Microsoft.EntityFrameworkCore.Analyzers/3.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-PrB8QZih5QMRhVjXZnwpFtgm14KU2M0ewilUIQ6W/qS7ugFBSlr1vaug2XnSdd2ODyZioc7Yypp4WNfaBIQg5Q==",
-      "path": "microsoft.entityframeworkcore.analyzers/3.1.1",
-      "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.1.nupkg.sha512"
+      "sha512": "sha512-2v0Md70wiGS1vmco8/koAz93eOSusFh83OqwYWFxhxS6wSii7LDOhWL5Ww/zRsuGkxH4uWtNkMg5gLXBTs64Jg==",
+      "path": "microsoft.entityframeworkcore.analyzers/3.1.2",
+      "hashPath": "microsoft.entityframeworkcore.analyzers.3.1.2.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/3.1.1": {
       "type": "package",

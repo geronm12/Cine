@@ -20,12 +20,10 @@ namespace Cine.ConexionSql
 
         static readonly MySqlConnectionStringBuilder conn = new MySqlConnectionStringBuilder
         {
-            Server = "127.0.0.1",
+            Server = "34.69.220.243",
             Database = "Cines",
             UserID = "root",
             Password = "agente21",
-            Port = 3306
-
         };
         public static string ObtenerCadenaConexionMySqlFirestore => conn.ConnectionString;
 

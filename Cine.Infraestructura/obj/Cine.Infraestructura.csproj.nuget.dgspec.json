@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {}
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj",
         "projectName": "Cine.Constantes",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -42,6 +42,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj",
         "projectName": "Cine.Dominio",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -89,8 +95,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj"
               }
             }
           }
@@ -107,6 +113,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -138,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj",
         "projectName": "Cine.Infraestructura",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\Cine.Infraestructura.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Infraestructura\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -166,14 +176,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj"
               }
             }
           }
@@ -190,6 +200,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -221,14 +235,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj",
         "projectName": "Cine.Interfaces",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -249,8 +263,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj"
               }
             }
           }
@@ -263,6 +277,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -282,14 +302,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj",
         "projectName": "Cine.ConexionSql",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\Cine.ConexionSql.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\Cine.ConexionSql.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\ConexionSql\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\ConexionSql\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -321,6 +341,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[3.1.1, )"

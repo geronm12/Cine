@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj": {}
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj",
         "projectName": "Cine.Constantes",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -42,6 +42,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -61,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj",
         "projectName": "Cine.Dominio",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -89,8 +95,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Constantes\\Cine.Constantes.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Constantes\\Cine.Constantes.csproj"
               }
             }
           }
@@ -107,6 +113,10 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
@@ -138,14 +148,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj",
         "projectName": "Cine.Interfaces",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -166,8 +176,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj"
               }
             }
           }
@@ -180,6 +190,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -199,14 +215,14 @@
         }
       }
     },
-    "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj": {
+    "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj",
+        "projectUniqueName": "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj",
         "projectName": "Mapper",
-        "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\Mapper.csproj",
+        "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\Mapper.csproj",
         "packagesPath": "C:\\Users\\gerol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Mapper\\obj\\",
+        "outputPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Mapper\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -227,11 +243,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Dominio\\Cine.Dominio.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Dominio\\Cine.Dominio.csproj"
               },
-              "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj": {
-                "projectPath": "C:\\Users\\gerol\\source\\repos\\PracticaAsp.Net\\Cine.Interfaces\\Cine.Interfaces.csproj"
+              "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj": {
+                "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Interfaces\\Cine.Interfaces.csproj"
               }
             }
           }
@@ -248,6 +264,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2, )"
             }
           },
           "imports": [
