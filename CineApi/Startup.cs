@@ -77,6 +77,7 @@ namespace CineApi
             app.UseMvc(routes =>
             {
                 routes.MapRoute(name: "default", template: "{controller-home}/{action=Index}/{Id}");
+                //routes.MapRoute(name: "default", template: "{controller-home}/{action=Index}/{nombreUsuario,password}");
             });
 
             app.UseMvc();
