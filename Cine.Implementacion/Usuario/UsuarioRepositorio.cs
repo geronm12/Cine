@@ -56,13 +56,16 @@ namespace Cine.Implementacion.Usuario
             
         }
 
+        public Task LastTimeLogin(long userId)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<bool> Login(string nombre, string password)
         {
             //Expression<Func<Dominio._4._1_Entidades.Usuario.Usuario, bool>> pred = x => true;
             //pred = pred.And(x => x.Nombre == nombre && _encryptar.Desencriptar(x.Password, _encryptar.GetKey()) == password);
-
-        
-
+ 
             bool esValido = await Task.Run(() =>
             {
             var usuario = _usuarioRepos.GetByFilter(predicate: x => x.Nombre.Equals(nombre), null, null, false).Result;
@@ -97,9 +100,10 @@ namespace Cine.Implementacion.Usuario
 
             if(usuario != null)
             {
-                var password = _encryptar.Encriptar(dto.Password, _encryptar.GetKey());
 
-                dto.Password = password;
+                var passwordEncriptado = _encryptar.Hash(dto.Password);
+
+                dto.Password = passwordEncriptado;
 
                 usuario = _mapper.Map<Dominio._4._1_Entidades.Usuario.Usuario>(dto);
 

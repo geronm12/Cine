@@ -267,6 +267,9 @@ namespace Cine.Infraestructura.Migrations
                     b.Property<bool>("EstaBorrado")
                         .HasColumnType("tinyint(1)");
 
+                    b.Property<string>("Mail")
+                        .HasColumnType("longtext CHARACTER SET utf8mb4");
+
                     b.Property<string>("Nombre")
                         .IsRequired()
                         .HasColumnType("varchar(20) CHARACTER SET utf8mb4")
@@ -280,6 +283,12 @@ namespace Cine.Infraestructura.Migrations
                     b.Property<string>("TipoUsuario")
                         .IsRequired()
                         .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                    b.Property<DateTime>("UltimaConexión")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<bool>("UsuarioBloqueado")
+                        .HasColumnType("tinyint(1)");
 
                     b.HasKey("Id");
 

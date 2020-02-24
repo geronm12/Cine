@@ -28,7 +28,7 @@ namespace Mapper
 
             //Perfil Dto a Entidad y Viceversa
 
-            CreateMap<Usuario, UsuarioDto>().ReverseMap().ForMember(src => src.Id, opt => opt.Ignore());
+            CreateMap<Usuario, UsuarioDto>().ReverseMap();
 
             CreateMap<Cine.Dominio._4._1_Entidades.Cine.Cine, CineDto>().ReverseMap();
 
@@ -45,9 +45,7 @@ namespace Mapper
             CreateMap<Pelicula, PeliculaDto>().ReverseMap();
 
             CreateMap<Sala, SalaDto>().ReverseMap();
-
-            //Perfil Dto a ViewModel
-                 
+ 
         }
 
 

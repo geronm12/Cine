@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Cine.Implementacion.Excepciones;
 using Cine.Interfaces.Cine;
 using Cine.Interfaces.Repositorio;
 using Microsoft.EntityFrameworkCore;
@@ -14,7 +15,7 @@ namespace Cine.Implementacion.Cine
     {
         private readonly IRepository<Dominio._4._1_Entidades.Cine.Cine> _cineRepos;
 
-
+     
         private readonly IMapper _mapper;
 
 
@@ -23,6 +24,8 @@ namespace Cine.Implementacion.Cine
             _cineRepos = cineRepos;
 
             _mapper = CrearMapa();
+
+            
 
         }
         public async Task Create(CineDto dto)
@@ -56,30 +59,85 @@ namespace Cine.Implementacion.Cine
         
         }
 
+        public async Task<IEnumerable<CineDto>> GetByFilter(string filtro)
+        {
+            try
+            {
+                var cinePorFiltr = await _cineRepos.GetByFilter(predicate: x => x.Nombre.Contains(filtro),
+                orderBy: x => x.OrderBy(l => l.Nombre), include: x => x.Include
+                (x => x.Salas), true);
+
+                if(cinePorFiltr.Count() > 0)
+                {
+                    return _mapper.Map<IEnumerable<CineDto>>(cinePorFiltr);
+                }
+                else
+                {
+                    return null;
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                filtro = string.Empty;
+            }
+ 
+        }
+
         public async Task<CineDto> GetById(long cineId)
         {
-            var cineObtenido = await _cineRepos.GetById(cineId, x => x.Include(x => x.Salas), true);
-            
-            if(cineObtenido != null)
+            try
             {
-                return _mapper.Map<CineDto>(cineObtenido);
+                var cineObtenido = await _cineRepos.GetById(cineId, x => x.Include(x => x.Salas), true);
+
+                if (cineObtenido != null)
+                {
+                    return _mapper.Map<CineDto>(cineObtenido);
+                }
+                else
+                {
+                    return null;
+                }
             }
-            else
+            catch (Exception e)
             {
-                return null;
+                string mensaje = e.Message;
+                throw new Exception(mensaje);
             }
+            finally
+            {
+                cineId = 0;
+            }
+           
         }
 
         public async Task Update(CineDto dto)
         {
-            var cine = await _cineRepos.GetById(dto.Id);
-
-            if(cine != null)
+            try
             {
-                cine = _mapper.Map<Dominio._4._1_Entidades.Cine.Cine>(dto);
+                var cine = await _cineRepos.GetById(dto.Id);
 
-                await _cineRepos.Update(cine);
+                if (cine != null)
+                {
+                    cine = _mapper.Map<Dominio._4._1_Entidades.Cine.Cine>(dto);
+
+                    await _cineRepos.Update(cine);
+                }
+
             }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            finally
+            {
+                dto = null;
+            }
+            
         }
     }
 }

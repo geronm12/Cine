@@ -714,7 +714,7 @@
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.Extensions.Caching.Abstractions/3.1.1": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.1.1"
+          "Microsoft.Extensions.Primitives": "3.1.2"
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll": {
@@ -745,7 +745,7 @@
       },
       "Microsoft.Extensions.Configuration/3.1.1": {
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "3.1.1"
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.2"
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll": {
@@ -757,14 +757,14 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.dll": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Abstractions/3.1.1": {
+      "Microsoft.Extensions.Configuration.Abstractions/3.1.2": {
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "3.1.1"
+          "Microsoft.Extensions.Primitives": "3.1.2"
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll": {
-            "assemblyVersion": "3.1.1.0",
-            "fileVersion": "3.100.119.61404"
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.100.220.6706"
           }
         },
         "compile": {
@@ -841,7 +841,7 @@
       "Microsoft.Extensions.Options/3.1.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1",
-          "Microsoft.Extensions.Primitives": "3.1.1"
+          "Microsoft.Extensions.Primitives": "3.1.2"
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {
@@ -853,11 +853,11 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/3.1.1": {
+      "Microsoft.Extensions.Primitives/3.1.2": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {
-            "assemblyVersion": "3.1.1.0",
-            "fileVersion": "3.100.119.61404"
+            "assemblyVersion": "3.1.2.0",
+            "fileVersion": "3.100.220.6706"
           }
         },
         "compile": {
@@ -913,7 +913,7 @@
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.Contracts/3.1.1": {
         "dependencies": {
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll": {
@@ -929,7 +929,7 @@
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "3.1.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Templating": "3.1.1",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll": {
@@ -991,7 +991,7 @@
         "dependencies": {
           "Microsoft.CodeAnalysis.CSharp.Workspaces": "3.3.1",
           "Microsoft.VisualStudio.Web.CodeGeneration.Contracts": "3.1.1",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "NuGet.Frameworks": "4.7.0"
         },
         "runtime": {
@@ -1090,11 +1090,11 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.0.2.21924"
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
           }
         },
         "compile": {
@@ -1134,7 +1134,7 @@
       "Pomelo.JsonObject/2.2.1": {
         "dependencies": {
           "Microsoft.CSharp": "4.5.0",
-          "Newtonsoft.Json": "11.0.2"
+          "Newtonsoft.Json": "12.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Pomelo.JsonObject.dll": {
@@ -1226,6 +1226,35 @@
             "assetType": "native",
             "fileVersion": "4.6.25512.1"
           }
+        }
+      },
+      "SendGrid/9.12.7": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/SendGrid.dll": {
+            "assemblyVersion": "9.12.7.0",
+            "fileVersion": "9.12.7.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/SendGrid.dll": {}
+        }
+      },
+      "Serenity.Core/3.12.3": {
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "3.1.1",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serenity.Core.dll": {
+            "assemblyVersion": "3.12.3.0",
+            "fileVersion": "3.12.3.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Serenity.Core.dll": {}
         }
       },
       "Swashbuckle.AspNetCore/5.0.0": {
@@ -2287,6 +2316,20 @@
           "Cine.Interfaces.dll": {}
         }
       },
+      "Cine.Mailer/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.2",
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.2",
+          "SendGrid": "9.12.7",
+          "Serenity.Core": "3.12.3"
+        },
+        "runtime": {
+          "Cine.Mailer.dll": {}
+        },
+        "compile": {
+          "Cine.Mailer.dll": {}
+        }
+      },
       "HelpersServicios/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Analyzers": "3.1.2"
@@ -2302,6 +2345,7 @@
         "dependencies": {
           "Cine.Implementacion": "1.0.0",
           "Cine.Infraestructura": "1.0.0",
+          "Cine.Mailer": "1.0.0",
           "Microsoft.EntityFrameworkCore.Analyzers": "3.1.2",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.1"
         },
@@ -4074,12 +4118,12 @@
       "path": "microsoft.extensions.configuration/3.1.1",
       "hashPath": "microsoft.extensions.configuration.3.1.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Configuration.Abstractions/3.1.1": {
+    "Microsoft.Extensions.Configuration.Abstractions/3.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Msu6IzxV486nNmsasJQXB/c44DiVz7FqXCjIBnvmG2M8NGaVDIQra1qff9cEEkhqa+dGH+jf3mdggm8w9eX7BQ==",
-      "path": "microsoft.extensions.configuration.abstractions/3.1.1",
-      "hashPath": "microsoft.extensions.configuration.abstractions.3.1.1.nupkg.sha512"
+      "sha512": "sha512-xmfdVdazTslWJ8od7uNS9QSPqn1wBC84RLprPrFS20EdAqd3lV0g0IZAitYbCiiICpjktnhzbUb85aLHNZ3RQw==",
+      "path": "microsoft.extensions.configuration.abstractions/3.1.2",
+      "hashPath": "microsoft.extensions.configuration.abstractions.3.1.2.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration.Binder/3.1.1": {
       "type": "package",
@@ -4123,12 +4167,12 @@
       "path": "microsoft.extensions.options/3.1.1",
       "hashPath": "microsoft.extensions.options.3.1.1.nupkg.sha512"
     },
-    "Microsoft.Extensions.Primitives/3.1.1": {
+    "Microsoft.Extensions.Primitives/3.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tC5Eo5DbJA+NgiIw26R5c97N02tFvtfqstUxqb/4qXPLXI2IAIWSMUkh/1c9Gw59TT9hNkLwlmLErSPlHgyJVQ==",
-      "path": "microsoft.extensions.primitives/3.1.1",
-      "hashPath": "microsoft.extensions.primitives.3.1.1.nupkg.sha512"
+      "sha512": "sha512-WGtoFWY9yc9HGMG6ObDNQPz9dBP+xz/GqFe2dKjdE/cSdXFEKxCFTyYCzL/e8kxVkc/Bq9qjOsXRWydvn0g9Uw==",
+      "path": "microsoft.extensions.primitives/3.1.2",
+      "hashPath": "microsoft.extensions.primitives.3.1.2.nupkg.sha512"
     },
     "Microsoft.Identity.Client/3.0.8": {
       "type": "package",
@@ -4249,12 +4293,12 @@
       "path": "netstandard.library/1.6.1",
       "hashPath": "netstandard.library.1.6.1.nupkg.sha512"
     },
-    "Newtonsoft.Json/11.0.2": {
+    "Newtonsoft.Json/12.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "path": "newtonsoft.json/11.0.2",
-      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
@@ -4416,6 +4460,20 @@
       "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
       "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
       "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "SendGrid/9.12.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pI4hxV9oRCA1L2/Gjn5T7U0R1dxQYEyDfG0Qjhqw1pGxOn122wkqhI1pOvt0LTXwoqhF34UudicMy4opjYNwfQ==",
+      "path": "sendgrid/9.12.7",
+      "hashPath": "sendgrid.9.12.7.nupkg.sha512"
+    },
+    "Serenity.Core/3.12.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ENJ4y4eKEmnOpKRRfsYlzSXna6WQknRm+Kqzf3Ru3qfS5CnEFgd9SvErY8BcExppwfAq8nwGbKcoZReU6MxACA==",
+      "path": "serenity.core/3.12.3",
+      "hashPath": "serenity.core.3.12.3.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/5.0.0": {
       "type": "package",
@@ -5066,6 +5124,11 @@
       "sha512": ""
     },
     "Cine.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Cine.Mailer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

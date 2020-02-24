@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -11,6 +12,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using static IoC.Inyeccion;
+ 
 
 namespace CineApi
 {
@@ -28,7 +30,7 @@ namespace CineApi
 
         }
 
-
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.Configure<CookiePolicyOptions>(options =>
@@ -52,9 +54,9 @@ namespace CineApi
 
             });
 
-             
-            ConfigurationServices(services);
 
+            ConfigurationServices(services);
+ 
 
         }
 
@@ -84,7 +86,7 @@ namespace CineApi
 
             app.UseSwagger();
 
-           
+
 
             app.UseSwaggerUI(options =>
             {
@@ -98,5 +100,8 @@ namespace CineApi
             });
 
         }
+
+       
+ 
     }
 }

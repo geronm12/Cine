@@ -48,3 +48,5 @@ C:\Users\gerol\source\repos\Cine\IoC\obj\Debug\netcoreapp3.1\IoC.AssemblyInfo.cs
 C:\Users\gerol\source\repos\Cine\IoC\obj\Debug\netcoreapp3.1\IoC.csproj.CopyComplete
 C:\Users\gerol\source\repos\Cine\IoC\obj\Debug\netcoreapp3.1\IoC.dll
 C:\Users\gerol\source\repos\Cine\IoC\obj\Debug\netcoreapp3.1\IoC.pdb
+C:\Users\gerol\source\repos\Cine\IoC\bin\Debug\netcoreapp3.1\Cine.Mailer.dll
+C:\Users\gerol\source\repos\Cine\IoC\bin\Debug\netcoreapp3.1\Cine.Mailer.pdb

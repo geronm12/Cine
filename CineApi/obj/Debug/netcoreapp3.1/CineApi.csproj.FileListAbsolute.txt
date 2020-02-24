@@ -286,3 +286,7 @@ C:\Users\gerol\source\repos\Cine\CineApi\bin\netcoreapp3.1\HelpersServicios.pdb
 C:\Users\gerol\source\repos\Cine\CineApi\bin\netcoreapp3.1\Mapper.pdb
 C:\Users\gerol\source\repos\Cine\CineApi\obj\Debug\netcoreapp3.1\CineApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\gerol\source\repos\Cine\CineApi\obj\Debug\netcoreapp3.1\CineApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gerol\source\repos\Cine\CineApi\bin\netcoreapp3.1\SendGrid.dll
+C:\Users\gerol\source\repos\Cine\CineApi\bin\netcoreapp3.1\Serenity.Core.dll
+C:\Users\gerol\source\repos\Cine\CineApi\bin\netcoreapp3.1\Cine.Mailer.dll
+C:\Users\gerol\source\repos\Cine\CineApi\bin\netcoreapp3.1\Cine.Mailer.pdb

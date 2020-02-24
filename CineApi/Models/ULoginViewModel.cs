@@ -8,9 +8,9 @@ namespace CineApi.Models
     public class ULoginViewModel
     {
 
-       public string nombreUsuario { get; set; }
+       public string NombreUsuario { get; set; }
 
-       public string password { get; set; }
+       public string Password { get; set; }
 
 
     }

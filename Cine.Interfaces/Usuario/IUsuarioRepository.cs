@@ -13,6 +13,8 @@ namespace Cine.Interfaces.Usuario
 
         Task Delete(long usuarioId);
 
+        Task LastTimeLogin(long userId);
+        
         Task<bool> Login(string nombre, string password);
 
     }

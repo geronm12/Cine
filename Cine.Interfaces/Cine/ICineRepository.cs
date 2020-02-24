@@ -18,5 +18,7 @@ namespace Cine.Interfaces.Cine
 
         Task<IEnumerable<CineDto>> GetAll();
 
+        Task<IEnumerable<CineDto>> GetByFilter(string filtro);
+
     }
 }

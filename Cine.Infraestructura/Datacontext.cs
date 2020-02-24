@@ -28,8 +28,8 @@ namespace Cine.Infraestructura
            
              
             optionsBuilder.UseMySql(ObtenerCadenaConexionMySqlFirestore);
- 
-             base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
+            base.OnConfiguring(optionsBuilder);
 
         }
 

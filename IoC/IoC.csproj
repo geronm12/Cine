@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Cine.Implementacion\Cine.Implementacion.csproj" />
     <ProjectReference Include="..\Cine.Infraestructura\Cine.Infraestructura.csproj" />
+    <ProjectReference Include="..\Cine.Mailer\Cine.Mailer.csproj" />
   </ItemGroup>
 
 </Project>

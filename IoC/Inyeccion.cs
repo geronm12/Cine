@@ -1,5 +1,4 @@
-﻿using Cine.Dominio._4._1_Entidades;
-using Cine.Dominio._4._1_Entidades.Usuario;
+﻿
 using Cine.Implementacion.Cine;
 using Cine.Implementacion.ConsultasServicio;
 using Cine.Implementacion.Cronograma;
@@ -14,7 +13,6 @@ using Cine.Infraestructura;
 using Cine.Infraestructura.Encriptador;
 using Cine.Infraestructura.Repositorio;
 using Cine.Interfaces.Cine;
-using Cine.Interfaces.ConsultasDto;
 using Cine.Interfaces.ConsultasDto.Interfaces;
 using Cine.Interfaces.Cronograma;
 using Cine.Interfaces.Dia;
@@ -25,6 +23,7 @@ using Cine.Interfaces.Pelicula;
 using Cine.Interfaces.Repositorio;
 using Cine.Interfaces.Sala;
 using Cine.Interfaces.Usuario;
+using Cine.Mailer;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -64,11 +63,17 @@ namespace IoC
 
             services.AddTransient<ICineSalaServicio, CineSalaConsultaServicio>();
 
-            //Usuarios
+            //Repositorio
 
-           services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+
+            //EmailSender
+
+            services.AddTransient<IEmailSender, SendGridEmailSender>();
 
         }
     }
+
+ 
 
 }
