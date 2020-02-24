@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Cine.Mailer;
 using IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -55,9 +56,8 @@ namespace CineApi
             });
 
 
-            ConfigurationServices(services);
- 
-
+            ConfigurationServices(services, Configuration);
+             
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

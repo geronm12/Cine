@@ -24,6 +24,7 @@ using Cine.Interfaces.Repositorio;
 using Cine.Interfaces.Sala;
 using Cine.Interfaces.Usuario;
 using Cine.Mailer;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -33,7 +34,7 @@ namespace IoC
 {
     public static class Inyeccion
     {
-        public static void ConfigurationServices(IServiceCollection services)
+        public static void ConfigurationServices(IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<Datacontext>();
 
@@ -70,6 +71,9 @@ namespace IoC
             //EmailSender
 
             services.AddTransient<IEmailSender, SendGridEmailSender>();
+
+            services.AddSingleton<IConfiguration>(provider => configuration);
+           
 
         }
     }

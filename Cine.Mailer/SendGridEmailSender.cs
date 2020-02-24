@@ -5,20 +5,33 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using System.Diagnostics;
+using Newtonsoft.Json;
+using System.Linq;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Cine.Mailer
 {
     public class SendGridEmailSender:IEmailSender
     {
-            private static IConfiguration Configuration { get; set; }
+            private static IConfiguration _config { get; set; }
             
-            public async Task<SendEmailResponse> SendEmailAsync(SendEmailDetails details)
+         
+            public SendGridEmailSender(IConfiguration config)
+            {
+               
+               _config = config;
+            
+            }
+ 
+
+        public async Task<SendEmailResponse> SendEmailAsync(SendEmailDetails details)
             {
 
             ///<summary>
             ///Api generada en SendGrid 
             /// </summary>
-              var apiKey = "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";
+              var apiKey = _config["SendGridKey"];
                ///<summary>
                ///Clase SendGridClient que requiere como parámetros apiKey
                ///Posee 4 sobrecargas para más información navegar dentro de la clase.
@@ -42,19 +55,70 @@ namespace Cine.Mailer
                     details.IsHtml ? 
                     details.BodyContent :
                     null);
-
-            msg.TemplateId = "cf405053-6d2a-488c-8427-0f1c07eb669b";
-            msg.AddSubstitution("--Title--", "Verify Email");
-            msg.AddSubstitution("--Content1--", "Hi guy. This is a verify email.");
-            msg.AddSubstitution("--Content2--", "This is the second line </br> And this is Just below");
-            msg.AddSubstitution("--ButtonText--", "Verify Email");
-            msg.AddSubstitution("--ButtonUrl--", "www.google.com");
-
+ 
 
             var response = await client.SendEmailAsync(msg);
-             
+            
+            ///<summary>
+            ///Si el mail es aceptado exitosamente
+            /// </summary>
+
+            if(response.StatusCode == System.Net.HttpStatusCode.Accepted)
+            {
                 return new SendEmailResponse();
             }
+
+            ///<summary>
+            ///De lo contrario se ejecutará la respuesta al error
+            /// </summary>
+            try
+            {
+                var bodyResult = await response.Body.ReadAsStringAsync();
+
+                //Deserializar la respuesta
+
+                var sendGridResponse = JsonConvert.DeserializeObject<SendGridResponse>(bodyResult);
+
+                //Agregar errores a la lista 
+                var errorResponse = new SendEmailResponse
+                {
+                    Errors = sendGridResponse?.Errores.Select(x => x.Message).ToList()
+
+                };
+
+                //Asegurarnos de tener aunque sea un error
+
+                if (errorResponse.Errors == null || errorResponse.Errors.Count == 0)
+                    //Agregar un error desconocido
+                    errorResponse.Errors = new List<string>(new[] { "Ocurrió un error desconocido. Por favor contacte con soporte" });                
+
+            }
+            catch(Exception ex)
+            {
+                //
+
+
+                //Rompe si estamos debuggeando
+
+                if (Debugger.IsAttached)
+                {
+                    var error = ex;
+                    Debugger.Break();
+                }
+                  
+
+                //Si ocurre algo inesperado devuelve el mensaje
+                return new SendEmailResponse
+                {
+                    Errors = new List<string>(new[] {"Ocurrió un error inesperado" })
+                };
+
+
+            }
+
+
+            return new SendEmailResponse();
+        }
         }
     }
 

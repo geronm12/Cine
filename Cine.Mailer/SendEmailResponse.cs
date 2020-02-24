@@ -1,4 +1,6 @@
-﻿ namespace Cine.Mailer
+﻿using System.Collections.Generic;
+
+namespace Cine.Mailer
 {    
     
     /// <summary>
@@ -9,13 +11,13 @@
         /// <summary>
         /// Indica si fue exitoso el envío del email
         /// </summary>
-        public bool Succesfull => ErrorMsg == null;
+        public bool Succesfull => !(Errors?.Count > 0);
 
         ///<summary>
         /// Propiedad que indica el mensaje de error en caso de que hubiera
         /// </summary>
 
-        public string ErrorMsg { get; set; }
+        public List<string> Errors { get; set; }
 
 
     }
