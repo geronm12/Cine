@@ -9,7 +9,6 @@ C:\Users\gerol\source\repos\PracticaAsp.Net\Cine.Constantes\obj\Debug\netcoreapp
 C:\Users\gerol\source\repos\Cine\Cine.Constantes\bin\Debug\netcoreapp3.1\Cine.Constantes.deps.json
 C:\Users\gerol\source\repos\Cine\Cine.Constantes\bin\Debug\netcoreapp3.1\Cine.Constantes.dll
 C:\Users\gerol\source\repos\Cine\Cine.Constantes\bin\Debug\netcoreapp3.1\Cine.Constantes.pdb
-C:\Users\gerol\source\repos\Cine\Cine.Constantes\obj\Debug\netcoreapp3.1\Cine.Constantes.csprojAssemblyReference.cache
 C:\Users\gerol\source\repos\Cine\Cine.Constantes\obj\Debug\netcoreapp3.1\Cine.Constantes.AssemblyInfoInputs.cache
 C:\Users\gerol\source\repos\Cine\Cine.Constantes\obj\Debug\netcoreapp3.1\Cine.Constantes.AssemblyInfo.cs
 C:\Users\gerol\source\repos\Cine\Cine.Constantes\obj\Debug\netcoreapp3.1\Cine.Constantes.dll

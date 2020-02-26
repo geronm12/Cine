@@ -9,7 +9,6 @@ C:\Users\gerol\source\repos\PracticaAsp.Net\HelpersServicios\obj\Debug\netcoreap
 C:\Users\gerol\source\repos\Cine\HelpersServicios\bin\Debug\netcoreapp3.1\HelpersServicios.deps.json
 C:\Users\gerol\source\repos\Cine\HelpersServicios\bin\Debug\netcoreapp3.1\HelpersServicios.dll
 C:\Users\gerol\source\repos\Cine\HelpersServicios\bin\Debug\netcoreapp3.1\HelpersServicios.pdb
-C:\Users\gerol\source\repos\Cine\HelpersServicios\obj\Debug\netcoreapp3.1\HelpersServicios.csprojAssemblyReference.cache
 C:\Users\gerol\source\repos\Cine\HelpersServicios\obj\Debug\netcoreapp3.1\HelpersServicios.AssemblyInfoInputs.cache
 C:\Users\gerol\source\repos\Cine\HelpersServicios\obj\Debug\netcoreapp3.1\HelpersServicios.AssemblyInfo.cs
 C:\Users\gerol\source\repos\Cine\HelpersServicios\obj\Debug\netcoreapp3.1\HelpersServicios.dll

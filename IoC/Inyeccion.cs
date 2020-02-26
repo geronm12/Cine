@@ -24,6 +24,7 @@ using Cine.Interfaces.Repositorio;
 using Cine.Interfaces.Sala;
 using Cine.Interfaces.Usuario;
 using Cine.Mailer;
+using Cine.Mailer.Templates;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -71,6 +72,8 @@ namespace IoC
             //EmailSender
 
             services.AddTransient<IEmailSender, SendGridEmailSender>();
+
+            services.AddTransient<IEmailTemplateSender, EmailTemplateSender>();
 
             services.AddSingleton<IConfiguration>(provider => configuration);
            
