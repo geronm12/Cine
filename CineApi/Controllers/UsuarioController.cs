@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Cine.Infraestructura;
 using Cine.Interfaces.Usuario;
-using Cine.Mailer;
+ 
 using CineApi.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -19,16 +19,14 @@ namespace CineApi.Controllers
         private readonly IUsuarioRepository _usuarioService;
 
         private readonly IMapper _mapper;
-
-        private readonly IEmailSender _sender;
-
-        public UsuarioController(IUsuarioRepository usuarioService, IEmailSender sender)
+ 
+        public UsuarioController(IUsuarioRepository usuarioService )
         {
             _usuarioService = usuarioService;
 
             _mapper = CrearMapa();
 
-            _sender = sender;
+            
         }
 
 
@@ -52,7 +50,7 @@ namespace CineApi.Controllers
 
         }
 
-
+        
         [HttpPost]
         [EnableCors("_myPolicy")]
         [Route("crear")]
@@ -80,21 +78,6 @@ namespace CineApi.Controllers
         }
 
 
-        [HttpPost]
-        [EnableCors("_myPolicy")]
-        [Route("mail")]
-        public async Task<IActionResult> Mailer(SendEmailDetails details)
-        {
-            var response = await _sender.SendEmailAsync(details);
-                
-            if(response != null)
-            {
-                return Ok(response);
-            }
-            else
-            {
-                return BadRequest();
-            }
-        }
+        
     }
 }

@@ -333,7 +333,7 @@
           "lib/netcoreapp3.0/MySqlConnector.dll": {}
         }
       },
-      "Newtonsoft.Json/12.0.3": {
+      "Newtonsoft.Json/11.0.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -415,31 +415,6 @@
             "assetType": "native",
             "rid": "win-x86"
           }
-        }
-      },
-      "SendGrid/9.12.7": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "9.0.1"
-        },
-        "compile": {
-          "lib/netstandard2.0/SendGrid.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/SendGrid.dll": {}
-        }
-      },
-      "Serenity.Core/3.12.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Caching.Memory": "3.1.0",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "lib/netstandard2.0/Serenity.Core.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/Serenity.Core.dll": {}
         }
       },
       "System.Collections/4.3.0": {
@@ -1428,22 +1403,6 @@
           "bin/placeholder/Cine.Interfaces.dll": {}
         }
       },
-      "Cine.Mailer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Analyzers": "3.1.2",
-          "Microsoft.Extensions.Configuration.Abstractions": "3.1.2",
-          "SendGrid": "9.12.7",
-          "Serenity.Core": "3.12.3"
-        },
-        "compile": {
-          "bin/placeholder/Cine.Mailer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Cine.Mailer.dll": {}
-        }
-      },
       "HelpersServicios/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2041,10 +2000,10 @@
         "mysqlconnector.nuspec"
       ]
     },
-    "Newtonsoft.Json/12.0.3": {
-      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+    "Newtonsoft.Json/11.0.2": {
+      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
       "type": "package",
-      "path": "newtonsoft.json/12.0.3",
+      "path": "newtonsoft.json/11.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2067,9 +2026,8 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.12.0.3.nupkg.sha512",
-        "newtonsoft.json.nuspec",
-        "packageIcon.png"
+        "newtonsoft.json.11.0.2.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "Pomelo.EntityFrameworkCore.MySql/3.1.1": {
@@ -2168,44 +2126,6 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "SendGrid/9.12.7": {
-      "sha512": "pI4hxV9oRCA1L2/Gjn5T7U0R1dxQYEyDfG0Qjhqw1pGxOn122wkqhI1pOvt0LTXwoqhF34UudicMy4opjYNwfQ==",
-      "type": "package",
-      "path": "sendgrid/9.12.7",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net452/SendGrid.dll",
-        "lib/net452/SendGrid.pdb",
-        "lib/net452/SendGrid.xml",
-        "lib/netstandard1.3/SendGrid.dll",
-        "lib/netstandard1.3/SendGrid.pdb",
-        "lib/netstandard1.3/SendGrid.xml",
-        "lib/netstandard2.0/SendGrid.dll",
-        "lib/netstandard2.0/SendGrid.pdb",
-        "lib/netstandard2.0/SendGrid.xml",
-        "sendgrid.9.12.7.nupkg.sha512",
-        "sendgrid.nuspec"
-      ]
-    },
-    "Serenity.Core/3.12.3": {
-      "sha512": "ENJ4y4eKEmnOpKRRfsYlzSXna6WQknRm+Kqzf3Ru3qfS5CnEFgd9SvErY8BcExppwfAq8nwGbKcoZReU6MxACA==",
-      "type": "package",
-      "path": "serenity.core/3.12.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net45/Serenity.Core.dll",
-        "lib/net45/Serenity.Core.pdb",
-        "lib/net45/Serenity.Core.xml",
-        "lib/netstandard2.0/Serenity.Core.dll",
-        "lib/netstandard2.0/Serenity.Core.pdb",
-        "lib/netstandard2.0/Serenity.Core.xml",
-        "serenity-logo-128.png",
-        "serenity.core.3.12.3.nupkg.sha512",
-        "serenity.core.nuspec"
       ]
     },
     "System.Collections/4.3.0": {
@@ -5266,11 +5186,6 @@
       "path": "../Cine.Interfaces/Cine.Interfaces.csproj",
       "msbuildProject": "../Cine.Interfaces/Cine.Interfaces.csproj"
     },
-    "Cine.Mailer/1.0.0": {
-      "type": "project",
-      "path": "../Cine.Mailer/Cine.Mailer.csproj",
-      "msbuildProject": "../Cine.Mailer/Cine.Mailer.csproj"
-    },
     "HelpersServicios/1.0.0": {
       "type": "project",
       "path": "../HelpersServicios/HelpersServicios.csproj",
@@ -5286,7 +5201,6 @@
     ".NETCoreApp,Version=v3.1": [
       "Cine.Implementacion >= 1.0.0",
       "Cine.Infraestructura >= 1.0.0",
-      "Cine.Mailer >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Analyzers >= 3.1.2",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 3.1.2"
     ]
@@ -5329,9 +5243,6 @@
             },
             "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj": {
               "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Infraestructura\\Cine.Infraestructura.csproj"
-            },
-            "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Mailer\\Cine.Mailer.csproj": {
-              "projectPath": "C:\\Users\\gerol\\source\\repos\\Cine\\Cine.Mailer\\Cine.Mailer.csproj"
             }
           }
         }

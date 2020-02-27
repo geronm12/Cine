@@ -31,12 +31,12 @@ namespace Cine.Mailer
             ///<summary>
             ///Api generada en SendGrid 
             /// </summary>
-              var apiKey = _config["SendGridKey"];
+            var apiKey = _config["SendGridKey"];
                ///<summary>
                ///Clase SendGridClient que requiere como parámetros apiKey
                ///Posee 4 sobrecargas para más información navegar dentro de la clase.
                /// </summary>    
-               var client = new SendGridClient(apiKey);
+            var client = new SendGridClient(apiKey);
                //From
                var from = new EmailAddress(details.FromEmail, details.FromName);
                //Subject   
