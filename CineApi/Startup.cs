@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Cine.Mailer;
 using IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -38,8 +37,7 @@ namespace CineApi
             {
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = Microsoft.AspNetCore.Http.SameSiteMode.None;
-            }
-        );
+            });
 
             services.AddCors(options =>
             {
@@ -54,6 +52,8 @@ namespace CineApi
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Cine", Version = "v1" });
 
             });
+
+
 
 
             ConfigurationServices(services, Configuration);
